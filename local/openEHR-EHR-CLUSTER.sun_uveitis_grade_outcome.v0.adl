@@ -1,0 +1,246 @@
+archetype (adl_version=1.4; uid=6e678b1a-6cd8-4211-b976-d8c7874f4a02)
+	openEHR-EHR-CLUSTER.sun_uveitis_grade_outcome.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2023-04-17">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Standardization of uveitis nomenclature
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8935739/">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"5eb7199641dedf98e4debc018e4b15e9">
+		["build_uid"] = <"6bea9b07-efbb-34f6-8f42-78b30a4a6729">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Classification uveitis
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Grading anterior chamber cells
+				value matches {
+					0|[local::at0019],
+					1|[local::at0020],
+					2|[local::at0021],
+					3|[local::at0022],
+					4|[local::at0023],
+					5|[local::at0024]
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Anterior Chamber Flare
+				value matches {
+					0|[local::at0009],
+					1|[local::at0010],
+					2|[local::at0011],
+					3|[local::at0012],
+					4|[local::at0013]
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Outcome
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0015,    -- Inactive
+							at0016,    -- Worsening activity
+							at0017,    -- Improved activity
+							at0018]    -- Remission
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Classification uveitis">
+					description = <"sun_uveitis_grade_outcome">
+				>
+				["at0001"] = <
+					text = <"Grading anterior chamber cells">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Anterior Chamber Flare">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"None">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Faint">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Moderate">
+					description = <"Iris and lens details clear">
+				>
+				["at0012"] = <
+					text = <"Marked">
+					description = <"Iris and lens details hazy">
+				>
+				["at0013"] = <
+					text = <"Intense">
+					description = <"Fibrin or plastic aqueous">
+				>
+				["at0014"] = <
+					text = <"Outcome">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Inactive">
+					description = <"Grade 0 cells">
+				>
+				["at0016"] = <
+					text = <"Worsening activity">
+					description = <"Two step increase in level of inflammation (e.g. anterior chamber cells, vitreous haze) or increase from grade 3+ to 4 +">
+				>
+				["at0017"] = <
+					text = <"Improved activity">
+					description = <"Two step decrease in level of inflammation (e.g. anterior chamber cells, vitreous haze) or decrease to grade 0">
+				>
+				["at0018"] = <
+					text = <"Remission">
+					description = <"Inactive disease for ≥3 months after discontinuing all treatments for eye disease">
+				>
+				["at0019"] = <
+					text = <"<1">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"1-5">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"6–15">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"16–25">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"26–50">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <">50">
+					description = <"">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Klassifikasjon uveitt">
+					description = <"sun_uveitis_grade_outcome">
+				>
+				["at0001"] = <
+					text = <"Celler i spalten">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Homogen lysvei">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Ingen">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Lett">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Moderat">
+					description = <"Iris og linsedetaljer klare">
+				>
+				["at0012"] = <
+					text = <"Markert">
+					description = <"Iris og linsedetaljer uklare">
+				>
+				["at0013"] = <
+					text = <"Intens">
+					description = <"Fibrin/plastisk">
+				>
+				["at0014"] = <
+					text = <"Sykdomstilstand">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Inaktiv">
+					description = <"Grad 0 celler">
+				>
+				["at0016"] = <
+					text = <"Forverret aktivitet">
+					description = <"To-trinns økning i betennelsesnivå (f.eks. fremre kammerceller, glassaktig uklarhet) eller økning fra grad 3+ til 4+">
+				>
+				["at0017"] = <
+					text = <"Økt aktivitet">
+					description = <"To-trinns reduksjon i betennelsesnivå (f.eks. fremre kammerceller, glassaktig uklarhet) eller reduksjon til grad 0">
+				>
+				["at0018"] = <
+					text = <"Remisjon">
+					description = <"Inaktiv sykdom i ≥3 måneder etter seponering av all behandling for øyesykdom">
+				>
+				["at0019"] = <
+					text = <"<1">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"1-5">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"6–15">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"16–25">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"26–50">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <">50">
+					description = <"">
+				>
+			>
+		>
+	>
