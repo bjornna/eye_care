@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "f95eae9d688cf14a448d325c2538dc7d"
+      "MD5-CAM-1.0.1" : "8e9885029f60cbe2886bf757bf158635"
     },
     "details" : {
       "es-ar" : {
@@ -254,7 +254,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "nodeId" : "at0134.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -371,7 +371,7 @@
                           "nodeId" : "at0139.2",
                           "attributes" : [ ],
                           "attributeTuples" : [ ],
-                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-refraction_details-002.v0",
+                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-refraction_details-003.v0",
                           "referenceType" : "archetypeOverlay"
                         } ]
                       } ],
@@ -864,7 +864,7 @@
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-refraction_details-002.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-refraction_details-003.v0"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -901,6 +901,62 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0008.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "497" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "°" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "upper" : 360.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -915,6 +971,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Refraction Details (2)",
+            "description" : "Details of ocular refraction for both measurement and therapetic purposes."
+          },
+          "at0008.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Prism Base Direction (2)",
+            "description" : "Prism base direction expressed as a numeric angle or as coded text."
           }
         },
         "pt-br" : {
@@ -923,6 +991,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Detalhes da Refração (2)",
+            "description" : "Detalhes da refração ocular para propósitos de medidas e terapêuticos."
+          },
+          "at0008.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "*Prism Base Direction(en) (2)",
+            "description" : "*Prism base direction expressed as a numeric angle or as coded text.(en)"
           }
         },
         "nb" : {
@@ -931,12 +1011,25 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Prismes baseretning - kode",
+            "description" : "Prismes baseretning uttrykt som vinkelretning eller kodet tekst"
+          },
+          "at0008.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.2",
+            "text" : "Prismes baseretning - grader",
+            "description" : "Prismes baseretning uttrykt som vinkelretning eller kodet tekst"
           }
         }
       },
       "termBindings" : {
         "SNOMED-CT" : {
-          "at0008.1" : "term:SNOMED-CT::246223004"
+          "at0008.1" : "term:SNOMED-CT::246223004",
+          "at0008.2" : "term:SNOMED-CT::246223004"
         }
       },
       "terminologyExtracts" : { },
@@ -944,6 +1037,16 @@
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
+          "members" : [ "at0009", "at0010", "at0011", "at0012", "at0013" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0009", "at0010", "at0011", "at0012", "at0013" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
           "members" : [ "at0009", "at0010", "at0011", "at0012", "at0013" ]
         }
       }
