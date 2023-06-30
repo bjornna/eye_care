@@ -69,9 +69,10 @@ DICOM Supplement 30 [Internet]. [cited 2012 Sep 26]. Available from: http://medi
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7AEF92C688CD13F85B78F9C263160847">
+		["MD5-CAM-1.0.1"] = <"4cda0b33da76435411d93f2c8221160e">
 		["build_uid"] = <"1ff298a7-9698-40ba-a272-61784df6d0f4">
 		["revision"] = <"0.0.1-alpha">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
@@ -131,7 +132,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Prism Base Direction
+			ELEMENT[at0008] occurrences matches {0..2} matches {    -- Prism Base Direction
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -327,11 +328,11 @@ ontology
 					description = <"Detaljer for okulær refraksjon.">
 				>
 				["at0004"] = <
-					text = <"Sfærisk dioptri">
+					text = <"Sfærisk">
 					description = <"Sfærisk korreksjon">
 				>
 				["at0005"] = <
-					text = <"Sylinder dioptri">
+					text = <"Sylinder">
 					description = <"Sylinderkorreksjon">
 				>
 				["at0006"] = <
