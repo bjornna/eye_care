@@ -23,7 +23,7 @@
       "original_publisher" : "",
       "custodian_namespace" : "",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5",
-      "MD5-CAM-1.0.1" : "b4e3e4335d5109dc6081c55cec5c1afe"
+      "MD5-CAM-1.0.1" : "f95eae9d688cf14a448d325c2538dc7d"
     },
     "details" : {
       "es-ar" : {
@@ -199,7 +199,37 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a0f91699399e7ec1711d7892eea06fad"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere resultatet av en refraksjonsundersøkelse. Kan brukes både med pasientens vanlige korreksjon eller ved ny refraksjon av pasienten.",
+          "keywords" : [ "øye", "syn", "oftalmologisk", "refraksjon", "korreksjon" ],
+          "use" : "Brukes til å registrere resultatet av en refraksjonsundersøkelse.\r\n\r\nDataelementet \"Beskrivelse\" kan brukes til å registrere et enkelt sammendrag av undersøkelsen eller for å integrere historiske data.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording the results of a refraction assessment, either performed on the patient's usual correction or by refraction of the patient.",
+          "keywords" : [ "eye", "sight", "vision", "ophthalmic", "visual", "refraction", "refraction", "correction" ],
+          "use" : "Use to record the results of measurement of refraction.\r\n\r\nThe 'Description' data element can be used to record simple narrative summary or as a means to integrate legacy data.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.refraction.v0",
     "differential" : true,
@@ -499,10 +529,55 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7AEF92C688CD13F85B78F9C263160847",
+        "PARENT:MD5-CAM-1.0.1" : "4cda0b33da76435411d93f2c8221160e",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Formål å registrere okulær refraksjon alene eller som del av visusundersøkelse.",
+          "keywords" : [ "*øye", "*visus", "*korreksjon", "*refraksjon" ],
+          "use" : "Denne arketypen brukes vanligvis som cluster i OBSERVATION.visual_acuity arketypen for å registrere visus.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar os detalhes da refração ocular durante o teste de acuidade visual, para registrar a correção do paciente obtida durante o exame físico ou para a prescrição de lentes (óculos ou contato).",
+          "keywords" : [ "olho", "correção", "refração", "dioptria", "lenses" ],
+          "use" : "*This archetype is normally used within the OBSERVATION.visual_acuity archetype to record a refraction applied as part of measurement or within INSTRUCTION and ACTION archetypes where a prescription order and supply process is being modelled.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of ocular refraction applied either as part of visual acuity testing, to report a subject's current correction of spectacles or contact lenses, or to request a new ocular prescription.",
+          "keywords" : [ "eye", "correction" ],
+          "use" : "This archetype is normally used within the OBSERVATION.visual_acuity archetype to record a refraction applied as part of measurement or within INSTRUCTION and ACTION archetypes where a prescription order and supply process is being modelled.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.refraction_details.v0",
     "differential" : true,
@@ -545,6 +620,62 @@
             } ]
           } ],
           "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0008.2",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "497" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "°" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "upper" : 360.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -559,6 +690,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0008.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Prism Base Direction (2)",
+            "description" : "Prism base direction expressed as a numeric angle or as coded text."
           }
         },
         "pt-br" : {
@@ -567,6 +704,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0008.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "*Prism Base Direction(en) (2)",
+            "description" : "*Prism base direction expressed as a numeric angle or as coded text.(en)"
           }
         },
         "nb" : {
@@ -575,12 +718,25 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
             "description" : ""
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Prismes baseretning - kode",
+            "description" : "Prismes baseretning uttrykt som vinkelretning eller kodet tekst"
+          },
+          "at0008.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.2",
+            "text" : "Prismes baseretning - grader",
+            "description" : "Prismes baseretning uttrykt som vinkelretning eller kodet tekst"
           }
         }
       },
       "termBindings" : {
         "SNOMED-CT" : {
-          "at0008.1" : "term:SNOMED-CT::246223004"
+          "at0008.1" : "term:SNOMED-CT::246223004",
+          "at0008.2" : "term:SNOMED-CT::246223004"
         }
       },
       "terminologyExtracts" : { },
@@ -588,6 +744,16 @@
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
+          "members" : [ "at0009", "at0010", "at0011", "at0012", "at0013" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0009", "at0010", "at0011", "at0012", "at0013" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
           "members" : [ "at0009", "at0010", "at0011", "at0012", "at0013" ]
         }
       }
@@ -644,10 +810,55 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7AEF92C688CD13F85B78F9C263160847",
+        "PARENT:MD5-CAM-1.0.1" : "4cda0b33da76435411d93f2c8221160e",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Formål å registrere okulær refraksjon alene eller som del av visusundersøkelse.",
+          "keywords" : [ "*øye", "*visus", "*korreksjon", "*refraksjon" ],
+          "use" : "Denne arketypen brukes vanligvis som cluster i OBSERVATION.visual_acuity arketypen for å registrere visus.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Registrar os detalhes da refração ocular durante o teste de acuidade visual, para registrar a correção do paciente obtida durante o exame físico ou para a prescrição de lentes (óculos ou contato).",
+          "keywords" : [ "olho", "correção", "refração", "dioptria", "lenses" ],
+          "use" : "*This archetype is normally used within the OBSERVATION.visual_acuity archetype to record a refraction applied as part of measurement or within INSTRUCTION and ACTION archetypes where a prescription order and supply process is being modelled.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of ocular refraction applied either as part of visual acuity testing, to report a subject's current correction of spectacles or contact lenses, or to request a new ocular prescription.",
+          "keywords" : [ "eye", "correction" ],
+          "use" : "This archetype is normally used within the OBSERVATION.visual_acuity archetype to record a refraction applied as part of measurement or within INSTRUCTION and ACTION archetypes where a prescription order and supply process is being modelled.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.refraction_details.v0",
     "differential" : true,
