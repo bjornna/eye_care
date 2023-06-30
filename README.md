@@ -7,7 +7,7 @@
 - Eye - inkubator arketyper.no : https://arketyper.no/ckm/incubators/1078.43.40
 - Ophthalmology - apperta.org: https://ckm.apperta.org/ckm/projects/1051.61.53
 
-## Arketyper
+## Archetypes - from CKM
 
 - CCT - Central Cornea Thickness Details
   https://ckm.openehr.org/ckm/archetypes/1013.1.2015
