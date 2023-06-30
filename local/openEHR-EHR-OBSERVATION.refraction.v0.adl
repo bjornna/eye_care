@@ -67,7 +67,7 @@ American Academy Of Ophthalmology (Author), Fred M. Wilson II (Editor), MD (Edit
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a0f91699399e7ec1711d7892eea06fad">
+		["MD5-CAM-1.0.1"] = <"1abb4cad203920e193fe6ea6cac984eb">
 		["build_uid"] = <"5eccc82d-3264-4cef-a11a-16418c247f2d">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -179,6 +179,19 @@ definition
 					allow_archetype CLUSTER[at0141] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0148] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0149,    -- *Autorefraksjon (nb)
+									at0150,    -- *Skiaskopi (nb)
+									at0151,    -- *Cycloplegi (nb)
+									at0152]    -- *Subjektiv refraksjonering (nb)
+								}
+							}
+						}
 					}
 				}
 			}
@@ -304,6 +317,26 @@ ontology
 					description = <"Reason why no refraction result is available for the test eye.">
 					comment = <"For example, patient was not cooperative; patient was not capable; ran out of time.">
 				>
+				["at0148"] = <
+					text = <"DV_CODED_TEXT">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"*Autorefraksjon (nb)">
+					description = <"*Autorefraksjon ble benyttet (nb)">
+				>
+				["at0150"] = <
+					text = <"*Skiaskopi (nb)">
+					description = <"">
+				>
+				["at0151"] = <
+					text = <"*Cycloplegi (nb)">
+					description = <"">
+				>
+				["at0152"] = <
+					text = <"*Subjektiv refraksjonering (nb)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -421,6 +454,26 @@ ontology
 				["at0075"] = <
 					text = <"Retinoskopi">
 					description = <"Visuskorreksjon gjort med retinoskopi">
+				>
+				["at0148"] = <
+					text = <"Metode">
+					description = <"">
+				>
+				["at0149"] = <
+					text = <"Autorefraksjon">
+					description = <"Autorefraksjon ble benyttet">
+				>
+				["at0150"] = <
+					text = <"Skiaskopi">
+					description = <"">
+				>
+				["at0151"] = <
+					text = <"Cycloplegi">
+					description = <"">
+				>
+				["at0152"] = <
+					text = <"Subjektiv refraksjonering">
+					description = <"">
 				>
 			>
 		>
