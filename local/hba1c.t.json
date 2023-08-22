@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "94dc69e3a33403d679df09e56dad6702",
+      "MD5-CAM-1.0.1" : "678de382fe5818b17491c292f6cbcf85",
       "PARENT:MD5-CAM-1.0.1" : "3C398CE94F69D3B3E37D9969DA50E646"
     },
     "details" : {
@@ -894,22 +894,6 @@
                   "children" : [ ]
                 } ],
                 "tuples" : [ {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "mmol" ]
-                  }, {
-                    "@type" : "C_REAL",
-                    "rmTypeName" : "REAL",
-                    "constraint" : [ {
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false,
-                      "lowerUnbounded" : true,
-                      "upperUnbounded" : true
-                    } ]
-                  } ]
-                }, {
                   "@type" : "C_PRIMITIVE_TUPLE",
                   "members" : [ {
                     "@type" : "C_STRING",
