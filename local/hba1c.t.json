@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2ee1164110ed625c33e96889eb67c6a6",
+      "MD5-CAM-1.0.1" : "94dc69e3a33403d679df09e56dad6702",
       "PARENT:MD5-CAM-1.0.1" : "3C398CE94F69D3B3E37D9969DA50E646"
     },
     "details" : {
@@ -881,19 +881,7 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "property",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "openehr"
-                  },
-                  "constraint" : [ "384" ]
-                } ]
-              } ],
+              "attributes" : [ ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -911,6 +899,22 @@
                     "@type" : "C_STRING",
                     "rmTypeName" : "STRING",
                     "constraint" : [ "mmol" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lowerIncluded" : false,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : true,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "mmol/mol" ]
                   }, {
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
