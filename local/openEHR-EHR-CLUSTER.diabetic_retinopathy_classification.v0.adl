@@ -69,7 +69,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b3c634ffda71693aba170d510e1b747d">
+		["MD5-CAM-1.0.1"] = <"d55060b83e2caa509ad9bd6c34c95c89">
 		["build_uid"] = <"4b5992e3-256a-4710-98b0-54c8b191ff26">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -95,6 +95,11 @@ definition
 				}
 			}
 			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Comments
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0030] occurrences matches {0..1} matches {    -- DV_TEXT
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -155,6 +160,10 @@ ontology
 					text = <"*sikker (nb)">
 					description = <"*Makulaødem (nb)">
 				>
+				["at0030"] = <
+					text = <"*DV_TEXT (en)">
+					description = <"">
+				>
 			>
 		>
 		["en"] = <
@@ -207,6 +216,10 @@ ontology
 					text = <"*sikker (nb)">
 					description = <"*Makulaødem (nb)">
 				>
+				["at0030"] = <
+					text = <"DV_TEXT">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -248,16 +261,21 @@ ontology
 					description = <"Nydannelse av kar eller preretinal/corpus blødning.">
 				>
 				["at0020"] = <
-					text = <"Ingen">
-					description = <"Ikke makulaødem">
+					text = <"Nei">
+					description = <"Ingen synlige ødemforandringer eller harde eskudater i bakre pol">
 				>
 				["at0021"] = <
-					text = <"Usikker">
-					description = <"Mulig makulaødem">
+					text = <"Ja - ikke klinisk signifikant">
+					description = <"Mildt makulaødem: Harde eskudater (eller fortykket retina) innenfor karbuene, men ikke sentrale deler av makula (>1 PD fra sentrum)">
 				>
 				["at0022"] = <
-					text = <"sikker">
-					description = <"Makulaødem">
+					text = <"Ja - klinisk signifikant">
+					description = <"Harde eskudater (eller fortykket retina) i sentrale del av makula, innenfor 1 PD fra sentrum. Moderat makulaødem: PÅvirker ikke sentrale fovea. 500um-1 PD fra sentrum. Alvorlig makulaødem: I fovea, mindre enn 500 um fra sentrum.">
+				>
+				["at0030"] = <
+					text = <"Metode for vurdering av makulaødem">
+					description = <"Angivelse av metode for vurdering av makulaødem. Typisk foto eller OCT. ">
+					comment = <"Benytt terminologi i template for å definere type metode. ">
 				>
 			>
 		>
