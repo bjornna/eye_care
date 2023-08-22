@@ -58,7 +58,9 @@
           },
           "codeString" : "nb"
         },
-        "keywords" : [ ],
+        "purpose" : "Mal for  enkel registrering av HbA1c - utviklet for bruk i øyemodulen",
+        "keywords" : [ "HbA1c,diabetes" ],
+        "use" : "Benyttes for oppfølging av diabetespasienter i øyemodulen. ",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
