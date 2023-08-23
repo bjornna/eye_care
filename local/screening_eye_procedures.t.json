@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "c306ee5533399ace15554bfa6aa02776",
+      "MD5-CAM-1.0.1" : "fdff2f2194c6677a8aa454eb3a76b94e",
       "PARENT:MD5-CAM-1.0.1" : "A711BD81809E053525691C2737149C88"
     },
     "details" : {
@@ -162,6 +162,12 @@
                     "attributeTuples" : [ ]
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0041.1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "CLUSTER",
                     "nodeId" : "at0022",
                     "attributes" : [ {
@@ -251,6 +257,7 @@
                       }, {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "ELEMENT",
+                        "occurrences" : "0..1",
                         "nodeId" : "at0037.1",
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
@@ -308,12 +315,25 @@
         }
       },
       "nb" : {
+        "at0041" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0041",
+          "text" : "Beskrivelse",
+          "description" : "Fritekst om utførte undersøkelser. "
+        },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
           "text" : "screening_eye_procedures",
           "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge prosedyrer som er utført.",
           "comment" : "Svarene kan være selvrapporterte."
+        },
+        "at0028.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0028.1",
+          "text" : "Prosedyrer utført?",
+          "description" : "Finnes det noen tidligere gjennomførte prosedyrer som som er innenfor kartleggingsformålet?",
+          "comment" : "Navnet på dataelementet kan omformuleres til det spesifikke spørsmålet i et templat eller brukergrensesnitt. Det foreslåtte verdisettet kan tilpasses/endres i det enkelte bruksområde ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN."
         },
         "at0037.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -327,6 +347,12 @@
           "text" : "*(Synthesized) (en)",
           "code" : "ac0.1",
           "description" : ""
+        },
+        "at0041.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0041.1",
+          "text" : "Kommentar om utførte prosedyrer",
+          "description" : "Fritekstbeskrivelse om prosedyrer som er tidligere utført og som er innenfor kartleggingsformålet."
         }
       },
       "de" : {
