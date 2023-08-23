@@ -10,8 +10,9 @@ language
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
-				["name"] = <"Silje Ljosland Bakke">
-				["organisation"] = <"Nasjonal IKT HF, Norway">
+				["name"] = <"Silje Ljosland Bakke, Marit Alice Venheim">
+				["organisation"] = <"Nasjonal IKT HF, Norway, Helse Vest IKT">
+				["email"] = <"marit.alice.venheim@helse-vest-ikt.no">
 			>
 		>
 	>
@@ -29,7 +30,7 @@ description
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Generisk forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner.">
-			keywords = <"rekvisisjon","bestilling","foreskriving","tjeneste","tjenesteyter","rekvirere","bestille","anmodning","forespørre","forespørsel","anmode","tilsyn">
+			keywords = <"rekvisisjon","bestilling","foreskriving","tjeneste","tjenesteyter","rekvirere","bestille","anmodning","forespørre","forespørsel","anmode","tilsyn","henvisning","henvising">
 			copyright = <"© openEHR Foundation, Nasjonal IKT HF, Nasjonal IKT HF">
 			use = <"Brukes til å registrere en forespørsel om en helserelatert tjeneste eller aktivitet som skal utføres av en kliniker, organisasjon eller virksomhet.
 
@@ -75,9 +76,9 @@ In many situations it will be possible to record the steps that occur as part of
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"5382BB9C8110F865C042A7A8DC4A000E">
-		["build_uid"] = <"6048921a-5316-4c49-89d7-8413c406db5f">
-		["revision"] = <"1.0.1">
+		["MD5-CAM-1.0.1"] = <"662517860A4CD65197A7E737FD63FA2E">
+		["build_uid"] = <"e85cf2a6-6988-4ac7-bd03-f8551e1a087f">
+		["revision"] = <"1.0.2">
 	>
 
 definition
