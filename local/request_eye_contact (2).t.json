@@ -1,0 +1,542 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "a0fd506a-154e-479e-b6fd-f378d48f9c21",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-08-23",
+      "name" : "Bjørn Næss",
+      "organisation" : "DIPS AS",
+      "email" : "bna@dips.no"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "MD5-CAM-1.0.1" : "b5e4ae5be3979d8170c23ec18a9627a8",
+      "PARENT:MD5-CAM-1.0.1" : "662517860A4CD65197A7E737FD63FA2E"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "purpose" : "Modellering av forespørsel av neste kontakt for oppfølging av øyeproblemet ",
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-INSTRUCTION.service_request.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-INSTRUCTION.t_service_request.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "INSTRUCTION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "activities",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ACTIVITY",
+        "nodeId" : "at0001",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "description",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0009",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0121.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "1..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "0..1",
+                        "terminologyId" : {
+                          "value" : "no.dips.arena.eyecare"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "no.dips.arena.eyecare" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "no.dips.arena.eyecare",
+                          "code" : "RET",
+                          "value" : "Diabetes retinopati screening"
+                        }, {
+                          "terminologyId" : "no.dips.arena.eyecare",
+                          "code" : "INJ",
+                          "value" : "Injeksjonsbehandling"
+                        }, {
+                          "terminologyId" : "no.dips.arena.eyecare",
+                          "code" : "GLA",
+                          "value" : "Glaukom kontroll"
+                        }, {
+                          "terminologyId" : "no.dips.arena.eyecare",
+                          "code" : "KAT",
+                          "value" : "Katarakt forundersøkelse-operasjon-etterktr"
+                        }, {
+                          "terminologyId" : "no.dips.arena.eyecare",
+                          "code" : "UVE",
+                          "value" : "Uveitt kontroll"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0148.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "1..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "0..1",
+                        "terminologyId" : {
+                          "value" : "SNOMED-CT"
+                        },
+                        "constraint" : [ ],
+                        "selectedTerminologies" : [ "SNOMED-CT" ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "SNOMED-CT",
+                          "code" : "276342005",
+                          "value" : "Undersøkelse av øye"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0135.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0062.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0064.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0152.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0065.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0068.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.1" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0040.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_DATE_TIME",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0145.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_DATE_TIME",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0144.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_DATE_TIME",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0147.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "BOOLEAN",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0076.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_BOOLEAN",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_BOOLEAN",
+                        "rmTypeName" : "BOOLEAN",
+                        "occurrences" : "1..1",
+                        "constraint" : [ true ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0078.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0150.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0008",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0010.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_IDENTIFIER",
+                "defaultValue" : {
+                  "@type" : "DV_IDENTIFIER"
+                },
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0011.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_IDENTIFIER",
+                "defaultValue" : {
+                  "@type" : "DV_IDENTIFIER"
+                },
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..0",
+            "nodeId" : "at0127.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "request_eye_contact",
+          "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
+        },
+        "ac0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.1",
+          "description" : ""
+        }
+      },
+      "nb" : {
+        "at0135" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0135",
+          "text" : "Beskrivelse",
+          "description" : "Utfyllende beskrivelse av tjenesten som skal utføres. ",
+          "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+        },
+        "at0144" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0144",
+          "text" : "Tjenesteintervall slutt",
+          "description" : "Siste frist for når tjenesten skal utføres. ",
+          "comment" : "Denne dato/tiden representerer den seneste datoen/tiden tjenesten kan utføres på. For eksempel i noen tilfeller må en tjeneste være utført før en annen hendelse, f.eks. planlagt kirurgi."
+        },
+        "at0145" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0145",
+          "text" : "Tjenesteintervall start",
+          "description" : "Første tidspunkt for start av tjenesten. ",
+          "comment" : "Denne dato/tiden representerer den tidligste datoen/tiden tjenesten kan utføres på. For eksempel må noen ganger en viss tid løpe før en tjeneste kan utføres, f.eks. ved noen prosedyrer er en avhengig av at pasienten har seponert legemidler i en periode før prosedyren."
+        },
+        "at0152" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0152",
+          "text" : "Klinisk indikasjon",
+          "description" : "Klinisk årsak til forespørsel",
+          "comment" : "Kan være at denne ikke skal benyttes eventuelt avklare med klinikk hvordan de vil bruke feltet "
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "request_eye_contact",
+          "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
+        },
+        "ac0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.1",
+          "description" : ""
+        },
+        "at0135.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0135.1",
+          "text" : "Beskrivelse",
+          "description" : "U",
+          "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
+        },
+        "at0152.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0152.1",
+          "text" : "Klinisk indikasjon",
+          "description" : "K",
+          "comment" : "For eksempel \"angina\" eller \"diabetes mellitus type 1\". Koding av indikasjonen med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster."
+        },
+        "at0144.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0144.1",
+          "text" : "Tjenesteintervall slutt",
+          "description" : "S",
+          "comment" : "Denne dato/tiden representerer den seneste datoen/tiden tjenesten kan utføres på. For eksempel i noen tilfeller må en tjeneste være utført før en annen hendelse, f.eks. planlagt kirurgi."
+        },
+        "at0145.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0145.1",
+          "text" : "Tjenesteintervall start",
+          "description" : "Første mulige tidspunkt for utførelse av tjenesten. ",
+          "comment" : "Denne dato/tiden representerer den tidligste datoen/tiden tjenesten kan utføres på. For eksempel må noen ganger en viss tid løpe før en tjeneste kan utføres, f.eks. ved noen prosedyrer er en avhengig av at pasienten har seponert legemidler i en periode før prosedyren."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : {
+      "ac0.1" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.1",
+        "members" : [ "at0136", "at0137", "at0138" ]
+      }
+    }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "aa58986e-476c-32d6-abdc-8791df2fd7b4",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "request_eye_contact",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
