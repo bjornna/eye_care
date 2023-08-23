@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "3dc84715be4e1224d0896f0203c07d0d",
+      "MD5-CAM-1.0.1" : "f7d486ea9afc5d6a0ed95467f600f955",
       "PARENT:MD5-CAM-1.0.1" : "3CEB215EBDC254AB8D99A25085B694CF"
     },
     "details" : {
@@ -58,7 +58,9 @@
           },
           "codeString" : "nb"
         },
-        "keywords" : [ ],
+        "purpose" : "Definerer strukturen for undersøkelse av netthinne. ",
+        "keywords" : [ "netthinne, retinopati, makulaødem" ],
+        "copyright" : "bifrost@dips.no",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -113,16 +115,120 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0091.1",
-                    "attributes" : [ ],
+                    "nodeId" : "at0004.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "1..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "0..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED-CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED-CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "427478009",
+                              "value" : "Evaluering av retina/netthinne"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
                     "attributeTuples" : [ ]
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
+                    "nodeId" : "at0091.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "1..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "0..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED-CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED-CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "410442000",
+                              "value" : "Angiografi av øye"
+                            }, {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "392010000",
+                              "value" : "OTC (optisk koherenstomografi)"
+                            }, {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "426880003",
+                              "value" : "Digital imaging of retina"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
                     "nodeId" : "at0055.1",
-                    "attributes" : [ ],
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "1..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "0..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED-CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED-CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "81745001",
+                              "value" : "Øye"
+                            }, {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "8966001",
+                              "value" : "Venstre øye"
+                            }, {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "18944008",
+                              "value" : "Høyre øye"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
                     "attributeTuples" : [ ]
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
@@ -276,7 +382,6 @@
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
                     "nodeId" : "at0059.1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
@@ -331,249 +436,6 @@
                     "rmTypeName" : "ELEMENT",
                     "occurrences" : "0..0",
                     "nodeId" : "at0108.1",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  } ]
-                } ],
-                "attributeTuples" : [ ]
-              } ]
-            } ],
-            "attributeTuples" : [ ]
-          }, {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "EVENT",
-            "nodeId" : "at0002.2",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "data",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "ITEM_TREE",
-                "nodeId" : "at0003",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "items",
-                  "children" : [ {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0091.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0055.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "nodeId" : "at0070.2",
-                    "attributes" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "value",
-                      "children" : [ {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_DATE_TIME",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      } ]
-                    } ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0072.2",
-                    "attributes" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "value",
-                      "children" : [ {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_CODED_TEXT",
-                        "attributes" : [ {
-                          "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "defining_code",
-                          "children" : [ {
-                            "@type" : "C_TERMINOLOGY_CODE",
-                            "rmTypeName" : "CODE_PHRASE",
-                            "occurrences" : "1..1",
-                            "terminologyId" : {
-                              "value" : "local"
-                            },
-                            "constraint" : [ "at0073", "at0074", "at0075", "at0076", "at0077", "at0078", "at0079", "at0080", "at0090" ]
-                          } ]
-                        } ],
-                        "attributeTuples" : [ ]
-                      }, {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_TEXT",
-                        "attributes" : [ ],
-                        "attributeTuples" : [ ]
-                      } ]
-                    } ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0071.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0061.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0014.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0008.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0056.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0063.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "nodeId" : "at0057.2",
-                    "attributes" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "value",
-                      "children" : [ {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "DV_CODED_TEXT",
-                        "occurrences" : "1..1",
-                        "attributes" : [ {
-                          "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "defining_code",
-                          "children" : [ {
-                            "@type" : "C_TERMINOLOGY_CODE",
-                            "rmTypeName" : "TERMINOLOGY_CODE",
-                            "occurrences" : "0..1",
-                            "terminologyId" : {
-                              "value" : "bildekvalitet"
-                            },
-                            "constraint" : [ ],
-                            "selectedTerminologies" : [ "bildekvalitet" ],
-                            "includedExternalTerminologyCodes" : [ {
-                              "terminologyId" : "bildekvalitet",
-                              "code" : "0",
-                              "value" : "Graderbar"
-                            }, {
-                              "terminologyId" : "bildekvalitet",
-                              "code" : "1",
-                              "value" : "Ikke graderbar"
-                            } ]
-                          } ]
-                        } ],
-                        "attributeTuples" : [ ]
-                      } ]
-                    } ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0021.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0058.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0020.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0059.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0023.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_ARCHETYPE_ROOT",
-                    "rmTypeName" : "CLUSTER",
-                    "occurrences" : "0..1",
-                    "nodeId" : "at0006.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ],
-                    "archetypeRef" : "Anatomical_Location_Eye",
-                    "referenceType" : "templateId"
-                  }, {
-                    "@type" : "C_ARCHETYPE_ROOT",
-                    "rmTypeName" : "CLUSTER",
-                    "occurrences" : "0..1",
-                    "nodeId" : "at0044.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ],
-                    "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-diabetic_retinopathy_classification-002.v0",
-                    "referenceType" : "archetypeOverlay"
-                  } ]
-                } ],
-                "attributeTuples" : [ ]
-              } ]
-            }, {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "state",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "ITEM_TREE",
-                "nodeId" : "at0047",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "items",
-                  "children" : [ {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0048.2",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..0",
-                    "nodeId" : "at0108.2",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
@@ -740,7 +602,8 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "CLUSTER",
-            "nodeId" : "at0093",
+            "occurrences" : "0..0",
+            "nodeId" : "at0093.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
@@ -806,7 +669,8 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "CLUSTER",
-            "nodeId" : "at0027",
+            "occurrences" : "0..0",
+            "nodeId" : "at0027.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
@@ -879,12 +743,6 @@
           "code" : "at0000.1",
           "text" : "bildeundersoekelse_øye",
           "description" : "The result of an imaging examination performed on an individual, using radiological techniques."
-        },
-        "at0002.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.1",
-          "text" : "Any event (2)",
-          "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
         }
       },
       "nb" : {
@@ -900,25 +758,6 @@
           "text" : "Dato fotografering",
           "description" : "Dato/Tid da den bildedannende undersøkelsen startet.",
           "comment" : "Tilsvarer FIHR 'ImagingStudy.started."
-        },
-        "at0002.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.1",
-          "text" : "Venstre øye",
-          "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
-        },
-        "at0002.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.2",
-          "text" : "Høyre øye",
-          "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i et templat eller i en applikasjon."
-        },
-        "at0070.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0070.1",
-          "text" : "Dato fotografering",
-          "description" : "Dato/Tid da den bildedannende undersøkelsen startet.",
-          "comment" : "Tilsvarer FIHR 'ImagingStudy.started."
         }
       },
       "de" : {
@@ -927,12 +766,6 @@
           "code" : "at0000.1",
           "text" : "bildeundersoekelse_øye",
           "description" : "Ergebnis einer bildgebenden Untersuchung, die an einer Person mit radiologischen Verfahren durchgeführt wird."
-        },
-        "at0002.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.1",
-          "text" : "Beliebiges Ereignis (2)",
-          "description" : "Standardwert, ein undefinierter/s Zeitpunkt oder Intervallereignis, das explizit im Template oder zur Laufzeit der Anwendung definiert werden kann."
         }
       },
       "sv" : {
@@ -941,12 +774,6 @@
           "code" : "at0000.1",
           "text" : "bildeundersoekelse_øye",
           "description" : "*The result of an imaging examination performed on an individual, using radiological techniques. (en)"
-        },
-        "at0002.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002.1",
-          "text" : "Ospecificerad händelse (2)",
-          "description" : "Förinställd, ospecificerad tidpunkt eller tidsintervall som kan definieras mer uttryckligen i en mall (template) eller i en applikation.\r\n"
         }
       }
     },
