@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "70b692584e819053fd165df7f806fae1",
+      "MD5-CAM-1.0.1" : "c228d7eed62e01ed6d287a91a9127042",
       "PARENT:MD5-CAM-1.0.1" : "662517860A4CD65197A7E737FD63FA2E"
     },
     "details" : {
@@ -245,32 +245,14 @@
                 "rmTypeName" : "ELEMENT",
                 "occurrences" : "0..0",
                 "nodeId" : "at0145.1",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "DV_DATE_TIME",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  } ]
-                } ],
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
                 "occurrences" : "0..0",
                 "nodeId" : "at0144.1",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "DV_DATE_TIME",
-                    "attributes" : [ ],
-                    "attributeTuples" : [ ]
-                  } ]
-                } ],
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
@@ -434,34 +416,6 @@
         }
       },
       "nb" : {
-        "at0135" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0135",
-          "text" : "Beskrivelse",
-          "description" : "Utfyllende beskrivelse av tjenesten som skal utføres. ",
-          "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
-        },
-        "at0144" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0144",
-          "text" : "Tjenesteintervall slutt",
-          "description" : "Siste frist for når tjenesten skal utføres. ",
-          "comment" : "Denne dato/tiden representerer den seneste datoen/tiden tjenesten kan utføres på. For eksempel i noen tilfeller må en tjeneste være utført før en annen hendelse, f.eks. planlagt kirurgi."
-        },
-        "at0145" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0145",
-          "text" : "Tjenesteintervall start",
-          "description" : "Første tidspunkt for start av tjenesten. ",
-          "comment" : "Denne dato/tiden representerer den tidligste datoen/tiden tjenesten kan utføres på. For eksempel må noen ganger en viss tid løpe før en tjeneste kan utføres, f.eks. ved noen prosedyrer er en avhengig av at pasienten har seponert legemidler i en periode før prosedyren."
-        },
-        "at0152" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0152",
-          "text" : "Klinisk indikasjon",
-          "description" : "Klinisk årsak til forespørsel",
-          "comment" : "Kan være at denne ikke skal benyttes eventuelt avklare med klinikk hvordan de vil bruke feltet "
-        },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
