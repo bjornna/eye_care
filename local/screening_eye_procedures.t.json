@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "71ef4f301e80037a5dd9018c38f118be",
+      "MD5-CAM-1.0.1" : "c306ee5533399ace15554bfa6aa02776",
       "PARENT:MD5-CAM-1.0.1" : "A711BD81809E053525691C2737149C88"
     },
     "details" : {
@@ -46,6 +46,7 @@
           },
           "codeString" : "nb"
         },
+        "purpose" : "Småtemplate for å definere strukturen for kartlegging av hvilke prosedyrer som ble utført",
         "keywords" : [ ],
         "originalResourceUri" : { },
         "otherDetails" : { }
@@ -111,6 +112,40 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "items",
                   "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0034.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "1..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
+                            "occurrences" : "0..1",
+                            "terminologyId" : {
+                              "value" : "SNOMED-CT"
+                            },
+                            "constraint" : [ ],
+                            "selectedTerminologies" : [ "SNOMED-CT" ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "SNOMED-CT",
+                              "code" : "134395001",
+                              "value" : "Screening diabetes retinopati"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
                     "nodeId" : "at0028.1",
