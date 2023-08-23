@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "75050b99cc3c3348859f459f4887574c",
+      "MD5-CAM-1.0.1" : "7f45cf1c0c7b74b472790ab7961c28b5",
       "PARENT:MD5-CAM-1.0.1" : "62823A86BC1C2B02574125E21F5DECCB"
     },
     "details" : {
@@ -55,7 +55,7 @@
           },
           "codeString" : "nb"
         },
-        "keywords" : [ ],
+        "keywords" : [ "eye" ],
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
