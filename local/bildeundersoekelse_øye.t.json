@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "231b427810da7ff90225bef430ae1791",
+      "MD5-CAM-1.0.1" : "8a3c0f5b430b81a21242c74e1dcb762c",
       "PARENT:MD5-CAM-1.0.1" : "3CEB215EBDC254AB8D99A25085B694CF"
     },
     "details" : {
@@ -234,7 +234,16 @@
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
                     "nodeId" : "at0070.1",
-                    "attributes" : [ ],
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_DATE_TIME",
+                        "attributes" : [ ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
                     "attributeTuples" : [ ]
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
@@ -790,58 +799,9 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "693fa72fe8eed0be7123f46c49c87680"
+        "PARENT:MD5-CAM-1.0.1" : "232b0a505658c648235d086e1ac330fc"
       },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "Registrer alvorlighetsgraden for diabetisk retinopati og diabetisk makulaødem i henhold til den internasjonale skalaen for den sykdommen.",
-          "keywords" : [ "diabetisk", "retinopati", "diabetisk", "makulaødem" ],
-          "use" : "Spesifiser en diagnose innen oppfølging av diabetisk retinopati.",
-          "misuse" : "Ikke bruk for å klassifisere sykdommer i tillegg til diabetisk retinopati eller diabetisk makulaødem.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "Register the severity for diabetic retinopathy and diabetic macular edema according to the international scale of that disease.",
-          "keywords" : [ "diabetic", "retinopathy", "diabetic", "macular", "oedema" ],
-          "use" : "Specify a diagnosis within diabetic retinopathy follow up.",
-          "misuse" : "Do not use to classify diseases besides diabetic retinopathy or diabetic macular edema.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "es" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "es"
-          },
-          "purpose" : "Registrar la severidad de la retinopatía diabética según la clasificación internacional dispuesta para la misma.",
-          "keywords" : [ "retinopatía diabética", "edema macular diabético" ],
-          "use" : "Concretar el diagnóstico de la retinopatía diabética en circuitos de seguimiento de la misma.",
-          "misuse" : "No utilizar para clasificar afecciones diferentes a la retinopatía diabética o el edema macular diabético.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.diabetic_retinopathy_classification.v0",
     "differential" : true,
@@ -922,58 +882,9 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "693fa72fe8eed0be7123f46c49c87680"
+        "PARENT:MD5-CAM-1.0.1" : "232b0a505658c648235d086e1ac330fc"
       },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "Registrer alvorlighetsgraden for diabetisk retinopati og diabetisk makulaødem i henhold til den internasjonale skalaen for den sykdommen.",
-          "keywords" : [ "diabetisk", "retinopati", "diabetisk", "makulaødem" ],
-          "use" : "Spesifiser en diagnose innen oppfølging av diabetisk retinopati.",
-          "misuse" : "Ikke bruk for å klassifisere sykdommer i tillegg til diabetisk retinopati eller diabetisk makulaødem.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "Register the severity for diabetic retinopathy and diabetic macular edema according to the international scale of that disease.",
-          "keywords" : [ "diabetic", "retinopathy", "diabetic", "macular", "oedema" ],
-          "use" : "Specify a diagnosis within diabetic retinopathy follow up.",
-          "misuse" : "Do not use to classify diseases besides diabetic retinopathy or diabetic macular edema.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "es" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "es"
-          },
-          "purpose" : "Registrar la severidad de la retinopatía diabética según la clasificación internacional dispuesta para la misma.",
-          "keywords" : [ "retinopatía diabética", "edema macular diabético" ],
-          "use" : "Concretar el diagnóstico de la retinopatía diabética en circuitos de seguimiento de la misma.",
-          "misuse" : "No utilizar para clasificar afecciones diferentes a la retinopatía diabética o el edema macular diabético.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
+      "details" : { }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.diabetic_retinopathy_classification.v0",
     "differential" : true,
