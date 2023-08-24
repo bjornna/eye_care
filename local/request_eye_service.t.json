@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "81f1a5674935819c3478f08aa9f03acd",
+      "MD5-CAM-1.0.1" : "2c9cea431d2055d6cebbd5c87c14ca00",
       "PARENT:MD5-CAM-1.0.1" : "662517860A4CD65197A7E737FD63FA2E"
     },
     "details" : {
@@ -456,6 +456,13 @@
           "text" : "Tjenesteintervall start",
           "description" : "Første mulige tidspunkt for utførelse av tjenesten. ",
           "comment" : "Denne dato/tiden representerer den tidligste datoen/tiden tjenesten kan utføres på. For eksempel må noen ganger en viss tid løpe før en tjeneste kan utføres, f.eks. ved noen prosedyrer er en avhengig av at pasienten har seponert legemidler i en periode før prosedyren."
+        },
+        "at0040.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0040",
+          "text" : "Dato/tid forfall",
+          "description" : "Siste tidspunkt for gjennomføring av tjenesten. ",
+          "comment" : "Dette dataelementet tillater registrering av timing for én tjeneste, enten som dato/tid, intervall av dato/tid, eller som en tekstbeskrivelsen som kan understøtte \"neste tilgjengelige\". I praksis vil klinikere ofte tenke i omtrentlig timing, for eksempel \"revurdering om 3 måneder, 6 måneder eller 12 måneder. Siden kliniske systemer trenger mer eksakte tidsangivelser, vil \"3 måneder\" som regel konverteres til en eksakt dato 3 måneder fra registreringsdatoen, og lagres i dette dataelementet. Dersom det er behov for kompleks timing eller sekvenser av timing, bruk arketypen CLUSTER.service_direction i SLOTet \"Kompleks timing\". I disse tilfellene blir dette dataelementet redundant."
         }
       }
     },
