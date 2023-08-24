@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2c9cea431d2055d6cebbd5c87c14ca00",
+      "MD5-CAM-1.0.1" : "a3771d3a4e4ca3a72b6f516c519bc744",
       "PARENT:MD5-CAM-1.0.1" : "662517860A4CD65197A7E737FD63FA2E"
     },
     "details" : {
@@ -235,6 +235,21 @@
                   "rmAttributeName" : "value",
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0145.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_DATE_TIME",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
@@ -244,16 +259,17 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "occurrences" : "0..0",
-                "nodeId" : "at0145.1",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "ELEMENT",
-                "occurrences" : "0..0",
                 "nodeId" : "at0144.1",
-                "attributes" : [ ],
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_DATE_TIME",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
                 "attributeTuples" : [ ]
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
@@ -447,14 +463,14 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0144.1",
           "text" : "Tjenesteintervall slutt",
-          "description" : "S",
+          "description" : "Tidspunktet hvor tjenesten må være utført innen. ",
           "comment" : "Denne dato/tiden representerer den seneste datoen/tiden tjenesten kan utføres på. For eksempel i noen tilfeller må en tjeneste være utført før en annen hendelse, f.eks. planlagt kirurgi."
         },
         "at0145.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0145.1",
           "text" : "Tjenesteintervall start",
-          "description" : "Første mulige tidspunkt for utførelse av tjenesten. ",
+          "description" : "Første mulige tidspunkt for utførelse av tjenesten. \nDette tidspunktet benyttes for å støtte koordinering av tjenesten. ",
           "comment" : "Denne dato/tiden representerer den tidligste datoen/tiden tjenesten kan utføres på. For eksempel må noen ganger en viss tid løpe før en tjeneste kan utføres, f.eks. ved noen prosedyrer er en avhengig av at pasienten har seponert legemidler i en periode før prosedyren."
         },
         "at0040.1" : {
