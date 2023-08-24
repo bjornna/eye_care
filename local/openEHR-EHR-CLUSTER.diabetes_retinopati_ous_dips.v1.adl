@@ -24,13 +24,24 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"766cdebf8cf4e9fe4eff8e8e029bc913">
+		["MD5-CAM-1.0.1"] = <"6c2122ce9ac26fa0470f8621f33b18da">
 		["build_uid"] = <"ed9abb6e-284a-3001-9c37-9b6ad49972e8">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Diabetes retinopati ous dips
 		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0026] occurrences matches {0..1} matches {    -- Øye
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0027,    -- Høyre øye
+							at0028]    -- Venstre øye
+						}
+					}
+				}
+			}
 			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Beskrivelse
 				value matches {
 					DV_TEXT matches {*}
@@ -252,6 +263,18 @@ ontology
 				["at0025"] = <
 					text = <"CRT">
 					description = <"*">
+				>
+				["at0026"] = <
+					text = <"Øye">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Høyre øye">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Venstre øye">
+					description = <"">
 				>
 			>
 		>
