@@ -15,7 +15,7 @@ description
 		["email"] = <"asa@dips.no">
 	>
 	lifecycle_state = <"NotSet">
-	other_contributors = <"Thomas Bærland", ...>
+	other_contributors = <"Thomas Bærland","Bjørn Næss <bna@dips.no>">
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -24,7 +24,7 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"5914CF26051C58767F89CDB2FA8D9EC1">
+		["MD5-CAM-1.0.1"] = <"f25b0ff3802c1bf9b5f246efada5f933">
 		["build_uid"] = <"ed9abb6e-284a-3001-9c37-9b6ad49972e8">
 	>
 
