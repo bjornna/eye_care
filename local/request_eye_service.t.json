@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e1f467be7c07a6dd78270fee16a8c5f1",
+      "MD5-CAM-1.0.1" : "d3b0ae6209036d6e31e0ae8f417ffd84",
       "PARENT:MD5-CAM-1.0.1" : "662517860A4CD65197A7E737FD63FA2E"
     },
     "details" : {
@@ -201,6 +201,7 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
                 "nodeId" : "at0068.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
@@ -218,7 +219,7 @@
                         "terminologyId" : {
                           "value" : "local"
                         },
-                        "constraint" : [ "ac0.1" ],
+                        "constraint" : [ "ac0.2" ],
                         "selectedTerminologies" : [ ]
                       } ]
                     } ],
@@ -229,6 +230,7 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
                 "nodeId" : "at0040.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
@@ -416,10 +418,10 @@
           "text" : "request_eye_contact",
           "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
         },
-        "ac0.1" : {
+        "ac0.2" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "(Synthesized)",
-          "code" : "ac0.1",
+          "code" : "ac0.2",
           "description" : ""
         }
       },
@@ -429,12 +431,6 @@
           "code" : "at0000.1",
           "text" : "request_eye_contact",
           "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
-        },
-        "ac0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "*(Synthesized) (en)",
-          "code" : "ac0.1",
-          "description" : ""
         },
         "at0135.1" : {
           "@type" : "ARCHETYPE_TERM",
@@ -470,6 +466,12 @@
           "text" : "Dato/tid forfall",
           "description" : "Siste tidspunkt for gjennomføring av tjenesten. ",
           "comment" : "Dette dataelementet tillater registrering av timing for én tjeneste, enten som dato/tid, intervall av dato/tid, eller som en tekstbeskrivelsen som kan understøtte \"neste tilgjengelige\". I praksis vil klinikere ofte tenke i omtrentlig timing, for eksempel \"revurdering om 3 måneder, 6 måneder eller 12 måneder. Siden kliniske systemer trenger mer eksakte tidsangivelser, vil \"3 måneder\" som regel konverteres til en eksakt dato 3 måneder fra registreringsdatoen, og lagres i dette dataelementet. Dersom det er behov for kompleks timing eller sekvenser av timing, bruk arketypen CLUSTER.service_direction i SLOTet \"Kompleks timing\". I disse tilfellene blir dette dataelementet redundant."
+        },
+        "ac0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "*(Synthesized) (en)",
+          "code" : "ac0.2",
+          "description" : ""
         }
       }
     },
@@ -479,6 +481,11 @@
       "ac0.1" : {
         "@type" : "VALUE_SET",
         "id" : "ac0.1",
+        "members" : [ "at0136", "at0137", "at0138" ]
+      },
+      "ac0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.2",
         "members" : [ "at0136", "at0137", "at0138" ]
       }
     }
@@ -851,6 +858,19 @@
           }
         },
         "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anbefalt tid",
+            "description" : "Strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet som forekommer over dager, uker, måneder eller år."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Måneder til konsultasjon",
+            "description" : "Antall døgn per tidsintervall aktiviteten skal utføres.",
+            "comment" : "For eksempel \"3 døgn per uke\" eller \"2-4 døgn per måned\". Spesifikke detaljer om timingen innenfor hvert døgn spesifiseres ved hjelp av arketypen CLUSTER.timing_daily."
+          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
