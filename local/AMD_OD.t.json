@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a4a0b33d387b98e85051e3e9cefe429c",
+      "MD5-CAM-1.0.1" : "e0b714b945750a18e1fdaa5bca91c535",
       "PARENT:MD5-CAM-1.0.1" : "A51A4BB9E06F63AF852E22C205953C0A"
     },
     "details" : {
@@ -588,17 +588,19 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_CODED_TEXT",
-                    "occurrences" : "0..1",
+                    "occurrences" : "1..1",
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "defining_code",
-                      "existence" : "0..1",
                       "children" : [ {
                         "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "0..1",
                         "terminologyId" : {
                           "value" : "EyeOUS"
                         },
                         "constraint" : [ ],
+                        "selectedTerminologies" : [ "EyeOUS" ],
                         "includedExternalTerminologyCodes" : [ {
                           "terminologyId" : "EyeOUS",
                           "code" : "AHP",
