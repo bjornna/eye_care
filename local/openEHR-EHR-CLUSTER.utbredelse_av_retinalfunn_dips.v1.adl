@@ -1,0 +1,88 @@
+archetype (adl_version=1.4; uid=a15c5d93-52db-3382-86bd-b82a8ade2ed4)
+	openEHR-EHR-CLUSTER.utbredelse_av_retinalfunn_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["name"] = <"">
+	>
+	lifecycle_state = <"0">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"73F0B0A50FB6E9BD449F0E38BAC5E3B5">
+		["build_uid"] = <"2cd96a34-ef52-3c3c-99cb-90a9ad1b75b0">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Utbredelse av retinalfunn dips
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Relativ størrelse målt i PA
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::380]>
+						list = <
+							["1"] = <
+								units = <"1">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Absolutt størrelse (i mm/um)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::335]>
+						list = <
+							["1"] = <
+								units = <"µm2">
+								precision = <|0|>
+							>
+							["2"] = <
+								units = <"mm2">
+								magnitude = <|>=0.0|>
+								precision = <|0|>
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Fovea involvert?
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Utbredelse av retinalfunn dips">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Relativ størrelse målt i PA">
+					description = <"Relativ størrelse på funn målt i papille-areal (PA)">
+				>
+				["at0002"] = <
+					text = <"Absolutt størrelse (i mm/um)">
+					description = <"Absolutt størrelse i areal">
+				>
+				["at0003"] = <
+					text = <"Fovea involvert?">
+					description = <"Til strukturert regsitrering av fovea-involvering">
+				>
+			>
+		>
+	>
