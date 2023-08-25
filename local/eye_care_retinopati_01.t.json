@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "b7f3360229745a33f79896f1eee5e7d5",
+      "MD5-CAM-1.0.1" : "4bd3fe35c29849140b828ecf2c0fe219",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -48,6 +48,7 @@
         },
         "purpose" : "Klassifisering av diabetes retinopati og makulaødem",
         "keywords" : [ ],
+        "use" : "Klassifisering av diabetes retinopati og makulaødem",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -221,7 +222,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "bdd6813938ae9fc3aba16d5f02793542",
+        "PARENT:MD5-CAM-1.0.1" : "1229be75b65f7cf0dc0c9aeddda372a0",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
