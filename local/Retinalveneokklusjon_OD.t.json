@@ -1,0 +1,508 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "123e3442-45f1-3cac-8e3f-c32ea49291bc",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-08-25"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "c2b1bf9bf69951850148d42c7f6d9d19"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-CLUSTER.retinalveneokklusjon_dips.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-CLUSTER.od.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "CLUSTER",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0001.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "EyeOUS"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "EyeOUS" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKN",
+                  "value" : "Makulaødem"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKO",
+                  "value" : "Neovaskularisering"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKP",
+                  "value" : "Neovaskulært glaukom"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKQ",
+                  "value" : "Korpusblødning"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKR",
+                  "value" : "Annet"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0002.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "TERMINOLOGY_CODE",
+                "occurrences" : "0..1",
+                "terminologyId" : {
+                  "value" : "EyeOUS"
+                },
+                "constraint" : [ ],
+                "selectedTerminologies" : [ "EyeOUS" ],
+                "includedExternalTerminologyCodes" : [ {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AJW",
+                  "value" : "Alder"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AJX",
+                  "value" : "Røyking"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AJY",
+                  "value" : "Hyperlipidemi"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AJZ",
+                  "value" : "Diabetes mellitus"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKA",
+                  "value" : "Glaukom"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKB",
+                  "value" : "P-piller"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKC",
+                  "value" : "Dehydrering"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKD",
+                  "value" : "Myeloproliferative sykdommer"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKE",
+                  "value" : "Trombofili"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKF",
+                  "value" : "Assosierte inflammatoriske sykdommer"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKG",
+                  "value" : "Orbitale sykdommer"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKH",
+                  "value" : "Kronisk nyresvikt"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "AKR",
+                  "value" : "Annet"
+                }, {
+                  "terminologyId" : "EyeOUS",
+                  "code" : "ALG",
+                  "value" : "Netthinneløsning"
+                } ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0007",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJO",
+                      "value" : "BRVO"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJP",
+                      "value" : "CRVO"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0012.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJQ",
+                      "value" : "Tett sentralskotom"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJR",
+                      "value" : "Afferent pupilledefekt"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJS",
+                      "value" : "Glaukom"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJT",
+                      "value" : "Dårlig visus under 0.05"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJU",
+                      "value" : "Mer enn 10 PA nonperfusjon"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0013.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJQ",
+                      "value" : "Tett sentralskotom"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJR",
+                      "value" : "Afferent pupilledefekt"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJS",
+                      "value" : "Glaukom"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJT",
+                      "value" : "Dårlig visus under 0.05"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AJV",
+                      "value" : "Mer enn 5 PA nonperfusjon"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0014",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0016.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AKK",
+                      "value" : "GRID"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AKS",
+                      "value" : "PRP"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "ALH",
+                      "value" : "Sektoriell GRID"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "ALI",
+                      "value" : "Sektoriell PRP"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0017.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AAA",
+                      "value" : "Avastin"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AAB",
+                      "value" : "Lucentis"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AAC",
+                      "value" : "Eylea"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AAD",
+                      "value" : "Ozurdex"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AAE",
+                      "value" : "Triesence"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0018.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AKL",
+                      "value" : "Vitrektomi"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AKM",
+                      "value" : "Filtrernde kirurgi"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AKR",
+                      "value" : "Annet"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "OD",
+          "description" : "Til registrering av relevante data for vurdering av retinalveneokklusjon. Data som finnes andre steder i journalen bør hvis mulig hentes inn for å hindre dobbeltregistrering.  Disse dataene danner grunlaget for vurdering av risiko for progresjon og anbefalt behandling."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "310ce0e2-4d71-35b8-84f6-3ea0e61c91a0",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Retinalveneokklusjon_OD",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "nb"
+  },
+  "translations" : [ ]
+}
