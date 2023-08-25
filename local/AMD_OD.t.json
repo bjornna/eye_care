@@ -1,0 +1,824 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "4f8334bd-795e-37c8-9cb4-8c2c9401ff8c",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2023-08-25"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "1924067b970dea780cf6bec5fea305e3"
+    },
+    "details" : {
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-CLUSTER.amddata_ous_dips.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-CLUSTER.od.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "CLUSTER",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0005",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0001.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGN",
+                      "value" : "Ingen"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGO",
+                      "value" : "Tørr"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGP",
+                      "value" : "Eksudativ"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0002.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGQ",
+                      "value" : "Ingen åpenbare forandringer"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGR",
+                      "value" : "Normale aldersforandringer"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGS",
+                      "value" : "Tidlig AMD"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGT",
+                      "value" : "Intermediær AMD"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AGU",
+                      "value" : "Avansert/sen AMD"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0008",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0017",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "CLUSTER",
+                "nodeId" : "at0009",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "items",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0012.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "0..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "existence" : "0..1",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "EyeOUS"
+                            },
+                            "constraint" : [ ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AGV",
+                              "value" : "Harde"
+                            }, {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AGW",
+                              "value" : "Myke"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0011.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "0..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "existence" : "0..1",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "EyeOUS"
+                            },
+                            "constraint" : [ ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AGX",
+                              "value" : "Små mindre enn 63 um"
+                            }, {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AGY",
+                              "value" : "Intermediære mer enn 63 og mindre enn 125 um"
+                            }, {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AGZ",
+                              "value" : "Store over 125 um"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0010.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "0..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "existence" : "0..1",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "EyeOUS"
+                            },
+                            "constraint" : [ ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AHA",
+                              "value" : "Konfluerende"
+                            }, {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AHB",
+                              "value" : "Ikke konfluerende"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "CLUSTER",
+                "nodeId" : "at0013",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "items",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "nodeId" : "at0014.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_CODED_TEXT",
+                        "occurrences" : "0..1",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "defining_code",
+                          "existence" : "0..1",
+                          "children" : [ {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "terminologyId" : {
+                              "value" : "EyeOUS"
+                            },
+                            "constraint" : [ ],
+                            "includedExternalTerminologyCodes" : [ {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AHC",
+                              "value" : "Tilstede"
+                            }, {
+                              "terminologyId" : "EyeOUS",
+                              "code" : "AHD",
+                              "value" : "Fraværende"
+                            } ]
+                          } ]
+                        } ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0022",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0023.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "0..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "EyeOUS"
+                        },
+                        "constraint" : [ ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AGN",
+                          "value" : "Ingen"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHE",
+                          "value" : "Røykeslutt"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHF",
+                          "value" : "Blodtrykkskontroll"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHG",
+                          "value" : "Antioksidantsupplement"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHI",
+                          "value" : "Svaksynshjelpemidler"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHJ",
+                          "value" : "Observasjon"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHK",
+                          "value" : "Selvobservasjon med hjelpemiddel"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0026",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0035",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0037.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "0..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "EyeOUS"
+                        },
+                        "constraint" : [ ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAA",
+                          "value" : "Avastin"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAB",
+                          "value" : "Lucentis"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAC",
+                          "value" : "Eylea"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAD",
+                          "value" : "Ozurdex"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAE",
+                          "value" : "Triesence"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0038.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "0..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "EyeOUS"
+                        },
+                        "constraint" : [ ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAA",
+                          "value" : "Avastin"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAB",
+                          "value" : "Lucentis"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAC",
+                          "value" : "Eylea"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAD",
+                          "value" : "Ozurdex"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AAE",
+                          "value" : "Triesence"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0028",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0033.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "0..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "EyeOUS"
+                        },
+                        "constraint" : [ ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHW",
+                          "value" : "Subretinal blødning"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHX",
+                          "value" : "Intraretinal blødning"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHY",
+                          "value" : "Korpussblødning"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHZ",
+                          "value" : "Subhyaloidalblødning"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AIA",
+                          "value" : "Pigmentepitelruptur"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AIB",
+                          "value" : "Fibrose"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0032.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "0..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "EyeOUS"
+                        },
+                        "constraint" : [ ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHP",
+                          "value" : "Økt"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHQ",
+                          "value" : "Lett økt"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHR",
+                          "value" : "Uendret"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHS",
+                          "value" : "Lett redusert"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHT",
+                          "value" : "Redusert"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0031.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "0..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "EyeOUS"
+                        },
+                        "constraint" : [ ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AIC",
+                          "value" : "Intraretinalt ødem"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AID",
+                          "value" : "Subretinalt ødem"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AIE",
+                          "value" : "PED"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0029.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "0..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "terminologyId" : {
+                          "value" : "EyeOUS"
+                        },
+                        "constraint" : [ ],
+                        "includedExternalTerminologyCodes" : [ {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHL",
+                          "value" : "RAP"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHM",
+                          "value" : "Klassisk membran"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AHN",
+                          "value" : "PCV"
+                        }, {
+                          "terminologyId" : "EyeOUS",
+                          "code" : "AKT",
+                          "value" : "Okkult membran"
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0056",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0057.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "0..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "terminologyId" : {
+                      "value" : "EyeOUS"
+                    },
+                    "constraint" : [ ],
+                    "includedExternalTerminologyCodes" : [ {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIF",
+                      "value" : "Røyker"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIG",
+                      "value" : "Opphopning i familie"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIH",
+                      "value" : "Medikamentbruk"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AII",
+                      "value" : "Hypertensjon"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIJ",
+                      "value" : "Etnisitet"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIK",
+                      "value" : "Overvekt"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIL",
+                      "value" : "Diett med høyt fettinntak"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIM",
+                      "value" : "Lyseksponering"
+                    }, {
+                      "terminologyId" : "EyeOUS",
+                      "code" : "AIN",
+                      "value" : "Alder"
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "OD",
+          "description" : "unknown"
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "310ce0e2-4d71-35b8-84f6-3ea0e61c91a0",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "AMD_OD",
+  "otherMetaData" : { },
+  "templateOverlays" : [ ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "nb"
+  },
+  "translations" : [ ]
+}
