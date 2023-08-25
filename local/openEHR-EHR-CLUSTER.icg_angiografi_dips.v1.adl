@@ -1,0 +1,161 @@
+archetype (adl_version=1.4; uid=e23d2297-e729-3346-b8d4-4f598035bf4a)
+	openEHR-EHR-CLUSTER.icg_angiografi_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2017-03-29">
+		["name"] = <"Arne Løberg Sæter">
+		["organisation"] = <"DIPS ASA/OUS HF">
+		["email"] = <"asa@dips.no">
+	>
+	lifecycle_state = <"OrganisationDraft">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Cluster til registrering av funn ved ICG-angiografi. Clusteret er ment å inkluderes i OBSERVATION.imaging_exam. ">
+			use = <"Cluster til registrering av funn ved ICG-angiografi. Clusteret er ment å inkluderes i OBSERVATION.imaging_exam. ">
+		>
+	>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"4C0BD61AAADE3774DE99A2F65ACF409F">
+		["build_uid"] = <"66b17521-1025-36be-bb4e-14e1f5484c25">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- ICG-angiografi dips
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Beskrivelse
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..*} matches {    -- CNV-klassifisering
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- CNV relativ størrelse i PD
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::380]>
+						list = <
+							["1"] = <
+								units = <"1">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- CNV absolutt størrelse i mm
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+								precision = <|3|>
+							>
+							["2"] = <
+								units = <"µm">
+								precision = <|0|>
+							>
+						>
+					>
+				}
+			}
+			allow_archetype CLUSTER[at0004] occurrences matches {0..*} matches {    -- Andre detaljer
+				include
+					archetype_id/value matches {/.*/}
+			}
+			CLUSTER[at0008] occurrences matches {0..1} matches {    -- Strukturerte funn
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0005] occurrences matches {0..*} matches {    -- Funn
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..*} matches {    -- Hypofluorescens
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0010] occurrences matches {0..*} matches {    -- Hyperfluorescens
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..*} matches {    -- Vaskulær fylningsdefekt
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Andre detaljer
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"ICG-angiografi dips">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Beskrivelse">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"CNV-klassifisering">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"CNV relativ størrelse i PD">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Andre detaljer">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Funn">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Hypofluorescens">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Strukturerte funn">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Andre detaljer">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Hyperfluorescens">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Vaskulær fylningsdefekt">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"CNV absolutt størrelse i mm">
+					description = <"*">
+				>
+			>
+		>
+	>
