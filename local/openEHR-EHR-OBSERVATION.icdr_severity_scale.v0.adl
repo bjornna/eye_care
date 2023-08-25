@@ -38,13 +38,13 @@ description
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://www.helsedirektoratet.no/retningslinjer/diabetes/retinopati-og-regelmessig-netthinneundersokelse-ved-diabetes">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["references"] = <"https://www.helsedirektoratet.no/retningslinjer/diabetes/retinopati-og-regelmessig-netthinneundersokelse-ved-diabetes">
-		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
-		["MD5-CAM-1.0.1"] = <"bdd6813938ae9fc3aba16d5f02793542">
+		["MD5-CAM-1.0.1"] = <"7ba71af0bde94ee87b4ac9452006ca94">
 		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
@@ -86,6 +86,11 @@ definition
 									allow_archetype CLUSTER[at0026] occurrences matches {0..*} matches {    -- Strukturerte detaljer
 										include
 											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0027] occurrences matches {0..1} matches {    -- Kommentar
+										value matches {
+											DV_TEXT matches {*}
+										}
 									}
 								}
 							}
@@ -244,6 +249,10 @@ ontology
 					text = <"Strukturerte detaljer">
 					description = <"Benyttes for å modellere inn andre strukturerte elementer.  Noen applikasjoner vil knytte referanse til bildet som ble benyttet i vurderingen. ">
 				>
+				["at0027"] = <
+					text = <"Kommentar">
+					description = <"Fritekst kommentar til graderingen ">
+				>
 			>
 		>
 		["en"] = <
@@ -355,6 +364,10 @@ ontology
 				["at0026"] = <
 					text = <"*Strukturerte detaljer (nb)">
 					description = <"*Benyttes for å modellere inn andre strukturerte elementer.  Noen applikasjoner vil knytte referanse til bildet som ble benyttet i vurderingen.  (nb)">
+				>
+				["at0027"] = <
+					text = <"*Kommentar (nb)">
+					description = <"*Fritekst kommentar til graderingen  (nb)">
 				>
 			>
 		>
