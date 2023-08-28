@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2ac80f0a0192715adbff678b75e036ba",
+      "MD5-CAM-1.0.1" : "2bfc407caba8492958f05dbdd86cb153",
       "PARENT:MD5-CAM-1.0.1" : "2C300A214811804EEB160CAFCB6DE4D5"
     },
     "details" : {
@@ -337,7 +337,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "b3c634ffda71693aba170d510e1b747d",
+        "PARENT:MD5-CAM-1.0.1" : "232b0a505658c648235d086e1ac330fc",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
@@ -985,7 +985,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "b3c634ffda71693aba170d510e1b747d",
+        "PARENT:MD5-CAM-1.0.1" : "232b0a505658c648235d086e1ac330fc",
         "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org."
       },
       "details" : {
