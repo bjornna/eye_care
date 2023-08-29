@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "8296849a266e65cf3057f7093f1628c2",
+      "MD5-CAM-1.0.1" : "dff3e4fdab737d2ae820a344e682af4e",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2311,6 +2311,44 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "no.arena.eyecare.dr.metode"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "no.arena.eyecare.dr.metode" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "no.arena.eyecare.dr.metode",
+                        "code" : "DPRIM",
+                        "value" : "Primægradering"
+                      }, {
+                        "terminologyId" : "no.arena.eyecare.dr.metode",
+                        "code" : "DSEK",
+                        "value" : "Sekundærgradering"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0070.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2387,9 +2425,86 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
+              "nodeId" : "at0063.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "SNOMED-CT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "8966001",
+                        "value" : "Venstre øye"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "18944008",
+                        "value" : "Høyre øye"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0048.1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
+                      "terminologyId" : {
+                        "value" : "no.arena.eyecare"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "no.arena.eyecare" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "no.arena.eyecare",
+                        "code" : "L01",
+                        "value" : "Sekundær granskning"
+                      }, {
+                        "terminologyId" : "no.arena.eyecare",
+                        "code" : "L02",
+                        "value" : "OCT"
+                      }, {
+                        "terminologyId" : "no.arena.eyecare",
+                        "code" : "L03",
+                        "value" : "Ny kontroll"
+                      }, {
+                        "terminologyId" : "no.arena.eyecare",
+                        "code" : "L04",
+                        "value" : "Øye poliklinikk"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
