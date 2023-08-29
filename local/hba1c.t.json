@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "f1ef2698e31c4a25112d755e85037118",
+      "MD5-CAM-1.0.1" : "ab34a6fbc7a52d6583b0d6bc850b1860",
       "PARENT:MD5-CAM-1.0.1" : "3C398CE94F69D3B3E37D9969DA50E646"
     },
     "details" : {
@@ -229,7 +229,7 @@
                   }, {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "ELEMENT",
-                    "occurrences" : "0..1",
+                    "occurrences" : "0..0",
                     "nodeId" : "at0073.1",
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
@@ -247,7 +247,7 @@
                             "terminologyId" : {
                               "value" : "local"
                             },
-                            "constraint" : [ "ac0.10" ],
+                            "constraint" : [ "ac0.11" ],
                             "selectedTerminologies" : [ ]
                           } ]
                         } ],
@@ -423,10 +423,10 @@
           "text" : "hba1c",
           "description" : "*The result, including findings and interpretation, of a laboratory investigation performed on specimens from individuals or related materials(en)"
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       },
@@ -437,10 +437,10 @@
           "text" : "hba1c",
           "description" : "The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual."
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "(Synthesized)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       },
@@ -451,10 +451,10 @@
           "text" : "HbA1c",
           "description" : "Resultat, inkludert funn og laboratoriets tolkning, av en laboratorieundersøkelse utført på prøvemateriale fra et individ eller relatert til individet."
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       },
@@ -465,10 +465,10 @@
           "text" : "hba1c",
           "description" : "*The result, including findings and interpretation, of a laboratory investigation performed on specimens from individuals or related materials(en)"
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       },
@@ -479,10 +479,10 @@
           "text" : "hba1c",
           "description" : "Das Ergebnis - einschließlich der Befunde und der Interpretation des Labors - einer Untersuchung, die an Proben durchgeführt wurde, die von einer Einzelperson stammen oder mit dieser Person zusammenhängen."
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       },
@@ -493,10 +493,10 @@
           "text" : "hba1c",
           "description" : "L'esito, inclusi i risultati e l'interpretazione, di una indagine di laboratorio effettuata su campioni provenienti da individui o relativi materiali."
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       },
@@ -507,10 +507,10 @@
           "text" : "hba1c",
           "description" : "*The result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual.(en)"
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       },
@@ -521,10 +521,10 @@
           "text" : "hba1c",
           "description" : "Resultatet, inklusive fynd och laboratoriets tolkning, av en undersökning utförd på provmaterial från en individ eller relaterad till individen."
         },
-        "ac0.10" : {
+        "ac0.11" : {
           "@type" : "ARCHETYPE_TERM",
           "text" : "*(Synthesized) (en)",
-          "code" : "ac0.10",
+          "code" : "ac0.11",
           "description" : ""
         }
       }
@@ -580,6 +580,11 @@
       "ac0.10" : {
         "@type" : "VALUE_SET",
         "id" : "ac0.10",
+        "members" : [ "at0038" ]
+      },
+      "ac0.11" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.11",
         "members" : [ "at0038" ]
       }
     }
