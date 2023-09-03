@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "a2f7defb0b11eb92dca03628b0e107a1",
+      "MD5-CAM-1.0.1" : "7bfaa3b12c65d80b537385260b0b2fd3",
       "PARENT:MD5-CAM-1.0.1" : "A711BD81809E053525691C2737149C88"
     },
     "details" : {
@@ -316,12 +316,6 @@
         }
       },
       "nb" : {
-        "at0041" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0041",
-          "text" : "Beskrivelse",
-          "description" : "Fritekst om utførte undersøkelser. "
-        },
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
