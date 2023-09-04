@@ -42,7 +42,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d62700b7c711b982da7523c23fa9031f">
+		["MD5-CAM-1.0.1"] = <"91af0ee78702ab7ca2486f94cded5c09">
 		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -202,15 +202,15 @@ ontology
 					comment = <" Harde eksudater er et tegn på persisterende eller tidligere gjennomgått makulaødem. DMØ er definert som retinal fortykning, og krever en tredimensjonal undersøkelse for å kunne oppdages. Med stor grad av subjektivitet har dette vært vurdert ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. I klinikken har nå OCT (optisk koherenstomografi) nesten fullstendig overtatt definisjons- og deteksjonsmessig, da ødemet med denne metoden visualiseres direkte og med større presisjon.">
 				>
 				["at0011"] = <
-					text = <"Nei">
+					text = <"Ingen">
 					description = <"Ingen synlige ødemforandringer eller harde eksudater i bakre pol.">
 				>
 				["at0012"] = <
-					text = <"Ja - ikke klinisk signifikant">
+					text = <"Tilstede">
 					description = <"Mildt makulaødem: Harde eskudater (eller fortykket retina) innenfor karbuene, men ikke sentrale deler av makula (> 1 PD fra sentrum)">
 				>
 				["at0013"] = <
-					text = <"Ja - klinisk signifikant">
+					text = <"Senter involverende">
 					description = <"Harde eksudater (eller fortykket retina) i sentrale del av makula, innenfor 1 PD fra sentrum. Moderate makulaødem: Påvirker ikke sentrale fovea. 500um - 1 PD fra sentrum. Alvorlig makulaødem: I fovea, mindre enn 500 um fra sentrum">
 				>
 				["at0014"] = <
