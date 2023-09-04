@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "187d7a71be99adefbe759a82def8d153",
+      "MD5-CAM-1.0.1" : "e9987224c2859c053f7630b520b07110",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -509,6 +509,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0017.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -526,7 +527,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.12" ],
+                      "constraint" : [ "ac0.16" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -537,6 +538,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0017.2",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -554,7 +556,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.10" ],
+                      "constraint" : [ "ac0.18" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -565,6 +567,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0017.3",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -582,7 +585,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.15" ],
+                      "constraint" : [ "ac0.17" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -632,28 +635,10 @@
             "text" : "OCT",
             "description" : ""
           },
-          "ac0.10" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.10",
-            "description" : ""
-          },
-          "ac0.12" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.12",
-            "description" : ""
-          },
           "at0017.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0017.3",
             "text" : "Annet",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.15",
             "description" : ""
           },
           "at0022.1" : {
@@ -667,6 +652,24 @@
             "code" : "at0000.1",
             "text" : "Høyre øye",
             "description" : "Klassifisering av diabetes retinopati og makulaødem"
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.18",
+            "description" : ""
           }
         },
         "en" : {
@@ -688,28 +691,28 @@
             "text" : "*Modalitet (nb) (2)",
             "description" : ""
           },
-          "ac0.10" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (nb)",
-            "code" : "ac0.10",
-            "description" : ""
-          },
-          "ac0.12" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (nb)",
-            "code" : "ac0.12",
-            "description" : ""
-          },
           "at0017.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0017",
             "text" : "*Modalitet (nb) (3)",
             "description" : ""
           },
-          "ac0.15" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (nb)",
-            "code" : "ac0.15",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (nb)",
+            "code" : "ac0.17",
+            "description" : ""
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (nb)",
+            "code" : "ac0.18",
             "description" : ""
           }
         }
@@ -796,6 +799,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.15",
           "members" : [ "at0028" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0018" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0028" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0019" ]
         }
       }
     },
@@ -5796,6 +5814,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0017.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -5813,7 +5832,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.12" ],
+                      "constraint" : [ "ac0.16" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -5824,6 +5843,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0017.2",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -5841,7 +5861,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.10" ],
+                      "constraint" : [ "ac0.17" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -5852,6 +5872,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0017.3",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -5869,7 +5890,7 @@
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "ac0.15" ],
+                      "constraint" : [ "ac0.18" ],
                       "selectedTerminologies" : [ ]
                     } ]
                   } ],
@@ -5913,28 +5934,10 @@
             "text" : "OCT",
             "description" : ""
           },
-          "ac0.10" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.10",
-            "description" : ""
-          },
-          "ac0.12" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.12",
-            "description" : ""
-          },
           "at0017.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0017.3",
             "text" : "Annet",
-            "description" : ""
-          },
-          "ac0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.15",
             "description" : ""
           },
           "at0022.1" : {
@@ -5948,6 +5951,24 @@
             "code" : "at0000.1",
             "text" : "Venstre øye",
             "description" : "Klassifisering av diabetes retinopati og makulaødem"
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.18",
+            "description" : ""
           }
         },
         "en" : {
@@ -5963,28 +5984,28 @@
             "text" : "*Modalitet (nb) (2)",
             "description" : ""
           },
-          "ac0.10" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (nb)",
-            "code" : "ac0.10",
-            "description" : ""
-          },
-          "ac0.12" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (nb)",
-            "code" : "ac0.12",
-            "description" : ""
-          },
           "at0017.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0017",
             "text" : "*Modalitet (nb) (3)",
             "description" : ""
           },
-          "ac0.15" : {
+          "ac0.16" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (nb)",
-            "code" : "ac0.15",
+            "code" : "ac0.16",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (nb)",
+            "code" : "ac0.17",
+            "description" : ""
+          },
+          "ac0.18" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (nb)",
+            "code" : "ac0.18",
             "description" : ""
           }
         }
@@ -6070,6 +6091,21 @@
         "ac0.15" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.15",
+          "members" : [ "at0028" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0018" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0019" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
           "members" : [ "at0028" ]
         }
       }
