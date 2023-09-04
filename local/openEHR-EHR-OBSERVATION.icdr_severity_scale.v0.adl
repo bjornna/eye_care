@@ -42,7 +42,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"91af0ee78702ab7ca2486f94cded5c09">
+		["MD5-CAM-1.0.1"] = <"83b31208eb731395653885065a4be393">
 		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
@@ -67,9 +67,9 @@ definition
 									}
 									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Diabetisk makulaødem - vurdert bilde
 										value matches {
-											0|[local::at0011],
-											1|[local::at0012],
-											2|[local::at0013]
+											0|[local::at0042],
+											1|[local::at0043],
+											2|[local::at0044]
 										}
 									}
 									ELEMENT[at0036] occurrences matches {0..1} matches {    -- Diabetisk makulaødem - vurdert OCT
@@ -298,6 +298,18 @@ ontology
 					text = <"ITEM_TREE">
 					description = <"*">
 				>
+				["at0042"] = <
+					text = <"Nei">
+					description = <"Ingen synlige ødemforandringer eller harde eksudater i bakre pol">
+				>
+				["at0043"] = <
+					text = <"Ja - ikke klinisk signifikant">
+					description = <"Mildt makulaødem: Harde eskudater (eller fortykket retina) innenfor karbuene, men ikke sentrale deler av makula (> 1 PD fra sentrum)">
+				>
+				["at0044"] = <
+					text = <"Ja - klinisk signifikant">
+					description = <"Harde eksudater (eller fortykket retina) i sentrale del av makula, innenfor 1 PD fra sentrum. Moderate makulaødem: Påvirker ikke sentrale fovea. 500um - 1 PD fra sentrum. Alvorlig makulaødem: I fovea, mindre enn 500 um fra sentrum">
+				>
 			>
 		>
 		["en"] = <
@@ -443,6 +455,18 @@ ontology
 				["at0041"] = <
 					text = <"ITEM_TREE">
 					description = <"*">
+				>
+				["at0042"] = <
+					text = <"*Nei (nb)">
+					description = <"*Ingen synlige ødemforandringer eller harde eksudater i bakre pol (nb)">
+				>
+				["at0043"] = <
+					text = <"*Ja - ikke klinisk signifikant (nb)">
+					description = <"*Mildt makulaødem: Harde eskudater (eller fortykket retina) innenfor karbuene, men ikke sentrale deler av makula (> 1 PD fra sentrum) (nb)">
+				>
+				["at0044"] = <
+					text = <"*Ja - klinisk signifikant (nb)">
+					description = <"*Harde eksudater (eller fortykket retina) i sentrale del av makula, innenfor 1 PD fra sentrum. Moderate makulaødem: Påvirker ikke sentrale fovea. 500um - 1 PD fra sentrum. Alvorlig makulaødem: I fovea, mindre enn 500 um fra sentrum (nb)">
 				>
 			>
 		>
