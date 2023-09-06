@@ -7,13 +7,17 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
-		["b"] = <
-			language = <[ISO_639-1::b]>
-			author = <
-			>
-		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			author = <
+				["application"] = <"Adl Designer">
+			>
+			other_details = <
+				["notes"] = <"Generated automatically by Adl Designer">
+			>
+		>
+		["b"] = <
+			language = <[ISO_639-1::b]>
 			author = <
 				["application"] = <"Adl Designer">
 			>
@@ -57,7 +61,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"307aab04195768043deebaa46b3f38b2">
+		["MD5-CAM-1.0.1"] = <"687790119eec904bb52dabaeea00b94b">
 		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
