@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ccdc7a592c626cada3238b2d06129400",
+      "MD5-CAM-1.0.1" : "879f77ff1d32b9bcc7118831b1e10acd",
       "PARENT:MD5-CAM-1.0.1" : "662517860A4CD65197A7E737FD63FA2E"
     },
     "details" : {
@@ -103,7 +103,23 @@
                         "includedExternalTerminologyCodes" : [ {
                           "terminologyId" : "no.arena.eyecare.request",
                           "code" : "EY02",
-                          "value" : "Ny gradering/kontroll"
+                          "value" : "Ny fotokontroll (primærgradering)"
+                        }, {
+                          "terminologyId" : "no.arena.eyecare.request",
+                          "code" : "EY04",
+                          "value" : "Ny fotokontroll (sekundærgradering)"
+                        }, {
+                          "terminologyId" : "no.arena.eyecare.request",
+                          "code" : "EY05",
+                          "value" : "Ny fotokontroll (KI)"
+                        }, {
+                          "terminologyId" : "no.arena.eyecare.request",
+                          "code" : "EY01",
+                          "value" : "Sekundærgradering"
+                        }, {
+                          "terminologyId" : "no.arena.eyecare.request",
+                          "code" : "EY03",
+                          "value" : "Øyelegeundersøkelse"
                         } ]
                       } ]
                     } ],
@@ -443,7 +459,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Ny gradering",
+          "text" : "Oppfølgingstiltak",
           "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
         }
       }
