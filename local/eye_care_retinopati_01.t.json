@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "1af879d1cd0429afb876813da6fe785e",
+      "MD5-CAM-1.0.1" : "92ff959fcc1b000f5fc3a2c0f518d41a",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2489,10 +2489,6 @@
                         "terminologyId" : "no.arena.eyecare.dr.metode",
                         "code" : "DSEK",
                         "value" : "Sekundærgradering"
-                      }, {
-                        "terminologyId" : "no.arena.eyecare.dr.metode",
-                        "code" : "DKI",
-                        "value" : "Gradering fra KI"
                       } ]
                     } ]
                   } ],
