@@ -22,7 +22,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "9af154b398b344a84e83a6360801051e",
+      "MD5-CAM-1.0.1" : "63c64a8fcaa19af63546fc6c5bb436e8",
       "PARENT:MD5-CAM-1.0.1" : "6562F732112B8B3F94790E178F4243A5"
     },
     "details" : {
@@ -2484,7 +2484,7 @@
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "no.arena.eyecare.dr.metode",
                         "code" : "DPRIM",
-                        "value" : "Primægradering"
+                        "value" : "Primærgradering"
                       }, {
                         "terminologyId" : "no.arena.eyecare.dr.metode",
                         "code" : "DSEK",
@@ -8697,10 +8697,6 @@
                             "terminologyId" : "no.arena.eyecare.request",
                             "code" : "EY04",
                             "value" : "Ny fotokontroll (sekundærgradering)"
-                          }, {
-                            "terminologyId" : "no.arena.eyecare.request",
-                            "code" : "EY05",
-                            "value" : "Ny fotokontroll (KI)"
                           }, {
                             "terminologyId" : "no.arena.eyecare.request",
                             "code" : "EY01",
