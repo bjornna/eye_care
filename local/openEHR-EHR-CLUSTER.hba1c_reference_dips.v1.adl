@@ -9,12 +9,18 @@ language
 
 description
 	original_author = <
-		["name"] = <"">
+		["name"] = <"Martine Louise Nalum">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"mana@dips.no">
+		["date"] = <"2024-01-01">
 	>
 	lifecycle_state = <"0">
+	other_contributors = <"Bjørn Næss <bna@dips.no>, Morten Hørthe <mho@dips.no>, Runar Kristiansen <rkr@dips.no>", ...>
 	details = <
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
+			use = <"Benyttes for å støtte gjenbruk av verdier fra orginal arketype. Hensikten er å kunne lagre ned en verdi som er en kopi - og uten å lage duplikate primærregistreringer ">
+			misuse = <"Skal ikke benyttes for å representere primærregistreringen. Den skal lagres med publiserte arketyper for det kliniske konseptet. ">
 		>
 	>
 	other_details = <
