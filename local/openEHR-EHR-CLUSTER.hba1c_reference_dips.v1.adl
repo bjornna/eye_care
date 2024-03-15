@@ -18,15 +18,30 @@ description
 		>
 	>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"F5EF0A6A58CF5A1E99FB7E427F9B2B92">
+		["MD5-CAM-1.0.1"] = <"84150d15333ec0421b5d0c0510432799">
 		["build_uid"] = <"0dacfe9e-db63-3a9b-a230-ffe0718f2187">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- HbA1c referansearketype
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {*}    -- Analysenavn
-			ELEMENT[at0002] occurrences matches {0..1} matches {*}    -- Analyseresultat
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Analysenavn
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Analyseresultat
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::384]>
+						list = <
+							["1"] = <
+								units = <"mmol/mol">
+							>
+						>
+					>
+				}
+			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Time
 				value matches {
 					DV_DATE_TIME matches {*}
