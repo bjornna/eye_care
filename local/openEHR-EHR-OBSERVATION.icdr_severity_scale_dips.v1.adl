@@ -1,0 +1,461 @@
+archetype (adl_version=1.4; uid=cee2cef6-596a-4ad5-b058-7668b09ad674)
+	openEHR-EHR-OBSERVATION.icdr_severity_scale_dips.v1
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["date"] = <"2023-08-24">
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS AS">
+		["email"] = <"bna@dips.no">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Benyttes for klassifisering av diabetes retinopati og makulaødem">
+			keywords = <"diabetes,retinopati,makulaødem", ...>
+			use = <"Klassifisering av diabetes retinopati og makulaødem">
+			misuse = <"Er ikke men for generell dokumentasjon av funn ved undersøkelse av øye. ">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			copyright = <"© openEHR Foundation">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"https://www.helsedirektoratet.no/retningslinjer/diabetes/retinopati-og-regelmessig-netthinneundersokelse-ved-diabetes">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"e5da1f93e3bfc6f62cb2ef742b6e53b3">
+		["build_uid"] = <"af77528a-23be-3d80-8f9a-87ca9b948eef">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- Klassifisering av diabetes retinopati og makulaødem
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Diabetisk retinopati
+										value matches {
+											0|[local::at0005],
+											1|[local::at0006],
+											2|[local::at0007],
+											3|[local::at0008],
+											4|[local::at0009]
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {    -- Diabetisk makulaødem - vurdert bilde
+										value matches {
+											0|[local::at0011],
+											1|[local::at0012],
+											2|[local::at0013]
+										}
+									}
+									ELEMENT[at0036] occurrences matches {0..1} matches {    -- Diabetisk makulaødem - vurdert OCT
+										value matches {
+											0|[local::at0011],
+											1|[local::at0012],
+											2|[local::at0013]
+										}
+									}
+									ELEMENT[at0014] occurrences matches {0..1} matches {    -- Øye
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0015,    -- Høyre øye
+													at0016]    -- Venstre øye
+												}
+											}
+										}
+									}
+									allow_archetype CLUSTER[at0026] occurrences matches {0..*} matches {    -- Strukturerte detaljer
+										include
+											archetype_id/value matches {/.*/}
+									}
+									ELEMENT[at0027] occurrences matches {0..1} matches {    -- Kommentar
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0029] matches {    -- ITEM_TREE
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0017] occurrences matches {0..*} matches {    -- Modalitet
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0018,    -- Foto
+									at0019,    -- OCT
+									at0020,    -- Spaltelampe
+									at0021,    -- Oftalmoskopi
+									at0028]    -- Annet
+								}
+							}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Beskrivelse av modalitet
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Vurdering av bildekvalitet
+						value matches {
+							1|[local::at0038],
+							2|[local::at0039],
+							3|[local::at0040]
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Graderingsmetode
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0024,    -- Primærgradering
+									at0025]    -- Sekundærgradering
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"SNOMED-CT", ...>
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Klassifisering av diabetes retinopati og makulaødem">
+					description = <"Klassifisering av diabetes retinopati og makulaødem">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Diabetisk retinopati">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"0 - Ingen synlig diabetisk retinopati (DR)">
+					description = <"Ingen synlige forandringer">
+				>
+				["at0006"] = <
+					text = <"1 - Mild, non-proliferativ DR">
+					description = <"Bare rødpunkter (mikroaneurismer og/eller punktblødninger)">
+				>
+				["at0007"] = <
+					text = <"2 - Moderat non-proliferativ DR">
+					description = <"Mer enn mild NPDR, men mindre enn alvorlig NDPR">
+				>
+				["at0008"] = <
+					text = <"3 - Alvorlig non-proliferativ DR">
+					description = <"Mer enn 20 intraretinale blødninger i hver av de fire kvadrantene eller venehaustrering i minst to kvadranter eller tydelige IRMA i minst en kvandrant (4-2-1-regelen)">
+				>
+				["at0009"] = <
+					text = <"4 - Proliferativ DR">
+					description = <"Indirekte tegn på neovaskulering (NV) i form av corpusblødning og/eller preretinal blødning. Og/eller: Synlige proliferasjoner på papillen (new vessels on disc; NVD) eller andre steder på netthinnen (new vessels elsewhere), aktive eller behandlet med panretinal fotokoagulasjon. Høyrisiko PDR: Papilleprofilerasjoner (NVD >= 1/3 papilleareal) eller store proliferasjoner (NVE >= 1/2 papilleareal) eller proliferasjon + corpusblødning">
+				>
+				["at0010"] = <
+					text = <"Diabetisk makulaødem - vurdert bilde">
+					description = <"Vurdering gjort ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. Klassifiseringen har mindre presisjon enn ved OCT. ">
+					comment = <" Harde eksudater er et tegn på persisterende eller tidligere gjennomgått makulaødem. DMØ er definert som retinal fortykning, og krever en tredimensjonal undersøkelse for å kunne oppdages. Med stor grad av subjektivitet har dette vært vurdert ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. I klinikken har nå OCT (optisk koherenstomografi) nesten fullstendig overtatt definisjons- og deteksjonsmessig, da ødemet med denne metoden visualiseres direkte og med større presisjon.">
+				>
+				["at0011"] = <
+					text = <"0 - Nei">
+					description = <"Ingen synlige ødemforandringer eller harde eksudater i bakre pol.">
+				>
+				["at0012"] = <
+					text = <"1 - Ja, ikke klinisk signifikant">
+					description = <"Mildt makulaødem: Harde eskudater (eller fortykket retina) innenfor karbuene, men ikke sentrale deler av makula (> 1 PD fra sentrum)">
+				>
+				["at0013"] = <
+					text = <"2 - Ja, klinisk signifikant">
+					description = <"Harde eksudater (eller fortykket retina) i sentrale del av makula, innenfor 1 PD fra sentrum. Moderate makulaødem: Påvirker ikke sentrale fovea. 500um - 1 PD fra sentrum. Alvorlig makulaødem: I fovea, mindre enn 500 um fra sentrum">
+				>
+				["at0014"] = <
+					text = <"Øye">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Høyre øye">
+					description = <"Undersøkelsen er gjort på høyre øye">
+				>
+				["at0016"] = <
+					text = <"Venstre øye">
+					description = <"Undersøkelsen er gjort på venstre øye">
+				>
+				["at0017"] = <
+					text = <"Modalitet">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Foto">
+					description = <"Retina foto var grunnlaget for vurderingen">
+				>
+				["at0019"] = <
+					text = <"OCT">
+					description = <"OCT">
+				>
+				["at0020"] = <
+					text = <"Spaltelampe">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Oftalmoskopi">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Beskrivelse av modalitet">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Graderingsmetode">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Primærgradering">
+					description = <"Optiker, øyesykepleier eller annet kvalifisert helsepersonell med dokumenterte kvalifikasjoner kan primærgradere netthinnefoto.">
+				>
+				["at0025"] = <
+					text = <"Sekundærgradering">
+					description = <"Øyelege med dokumenterte kvalifikasjoner kan sekundærgradere og stille endelig diagnose.">
+				>
+				["at0026"] = <
+					text = <"Strukturerte detaljer">
+					description = <"Benyttes for å modellere inn andre strukturerte elementer.  Noen applikasjoner vil knytte referanse til bildet som ble benyttet i vurderingen. ">
+				>
+				["at0027"] = <
+					text = <"Kommentar">
+					description = <"Fritekst kommentar til graderingen ">
+				>
+				["at0028"] = <
+					text = <"Annet">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Diabetisk makulaødem - vurdert OCT">
+					description = <"Klassifisering med  OCT (optisk koherenstomografi) for direkte visualisering av ødemet og med beste presisjon. ">
+					comment = <" Harde eksudater er et tegn på persisterende eller tidligere gjennomgått makulaødem. DMØ er definert som retinal fortykning, og krever en tredimensjonal undersøkelse for å kunne oppdages. Med stor grad av subjektivitet har dette vært vurdert ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. I klinikken har nå OCT (optisk koherenstomografi) nesten fullstendig overtatt definisjons- og deteksjonsmessig, da ødemet med denne metoden visualiseres direkte og med større presisjon.">
+				>
+				["at0037"] = <
+					text = <"Vurdering av bildekvalitet">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"1 - God">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"2 - Moderat">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"3 - Ikke graderbar">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"ITEM_TREE">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"International Classification of DR Scale">
+					description = <"International Classification of DR Scale">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Any event (nb)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"*Diabetisk retinopati (nb)">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"*Ingen synlig diabetisk retinopati (DR) (nb)">
+					description = <"*Ingen synlige forandringer (nb)">
+				>
+				["at0006"] = <
+					text = <"*Mild, non-proliferativ DR (nb)">
+					description = <"*Bare rødpunkter (mikroaneurismer og/eller punktblødninger) (nb)">
+				>
+				["at0007"] = <
+					text = <"*Moderat non-proliferativ DR (nb)">
+					description = <"*Mer enn mild NPDR, men mindre enn alvorlig NDPR (nb)">
+				>
+				["at0008"] = <
+					text = <"*Alvorlig non-proliferativ DR (nb)">
+					description = <"*Mer enn 20 intraretinale blødninger i hver av de fire kvadrantene eller venehaustrering i minst to kvadranter eller tydelige IRMA i minst en kvandrant (4-2-1-regelen) (nb)">
+				>
+				["at0009"] = <
+					text = <"*Proliferativ DR (nb)">
+					description = <"*Indirekte tegn på neovaskulering (NV) i form av corpusblødning og/eller preretinal blødning. Og/eller: Synlige proliferasjoner på papillen (new vessels on disc; NVD) eller andre steder på netthinnen (new vessels elsewhere), aktive eller behandlet med panretinal fotokoagulasjon. Høyrisiko PDR: Papilleprofilerasjoner (NVD >= 1/3 papilleareal) eller store proliferasjoner (NVE >= 1/2 papilleareal) eller proliferasjon + corpusblødning (nb)">
+				>
+				["at0010"] = <
+					text = <"*Diabetisk makulaødem - vurdert bilde (nb)">
+					description = <"*Vurdering gjort ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. Klassifiseringen har mindre presisjon enn ved OCT.  (nb)">
+					comment = <"* Harde eksudater er et tegn på persisterende eller tidligere gjennomgått makulaødem. DMØ er definert som retinal fortykning, og krever en tredimensjonal undersøkelse for å kunne oppdages. Med stor grad av subjektivitet har dette vært vurdert ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. I klinikken har nå OCT (optisk koherenstomografi) nesten fullstendig overtatt definisjons- og deteksjonsmessig, da ødemet med denne metoden visualiseres direkte og med større presisjon. (nb)">
+				>
+				["at0011"] = <
+					text = <"*Nei (nb)">
+					description = <"*Ingen synlige ødemforandringer eller harde eksudater i bakre pol. (nb)">
+				>
+				["at0012"] = <
+					text = <"*Ja - ikke klinisk signifikant (nb)">
+					description = <"*Mildt makulaødem: Harde eskudater (eller fortykket retina) innenfor karbuene, men ikke sentrale deler av makula (> 1 PD fra sentrum) (nb)">
+				>
+				["at0013"] = <
+					text = <"*Ja - klinisk signifikant (nb)">
+					description = <"*Harde eksudater (eller fortykket retina) i sentrale del av makula, innenfor 1 PD fra sentrum. Moderate makulaødem: Påvirker ikke sentrale fovea. 500um - 1 PD fra sentrum. Alvorlig makulaødem: I fovea, mindre enn 500 um fra sentrum (nb)">
+				>
+				["at0014"] = <
+					text = <"*Øye (nb)">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"*Høyre øye (nb)">
+					description = <"*Undersøkelsen er gjort på høyre øye (nb)">
+				>
+				["at0016"] = <
+					text = <"*Venstre øye (nb)">
+					description = <"*Undersøkelsen er gjort på venstre øye (nb)">
+				>
+				["at0017"] = <
+					text = <"*Modalitet (nb)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"*Foto (nb)">
+					description = <"*Retina foto var grunnlaget for vurderingen (nb)">
+				>
+				["at0019"] = <
+					text = <"*OCT (nb)">
+					description = <"*OCT (nb)">
+				>
+				["at0020"] = <
+					text = <"*Spaltelampe (nb)">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"*Oftalmoskopi (nb)">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"*Beskrivelse av modalitet (nb)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"*Graderingsmetode (nb)">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"*Primærgradering (nb)">
+					description = <"*Optiker, øyesykepleier eller annet kvalifisert helsepersonell med dokumenterte kvalifikasjoner kan primærgradere netthinnefoto. (nb)">
+				>
+				["at0025"] = <
+					text = <"*Sekundærgradering (nb)">
+					description = <"*Øyelege med dokumenterte kvalifikasjoner kan sekundærgradere og stille endelig diagnose. (nb)">
+				>
+				["at0026"] = <
+					text = <"*Strukturerte detaljer (nb)">
+					description = <"*Benyttes for å modellere inn andre strukturerte elementer.  Noen applikasjoner vil knytte referanse til bildet som ble benyttet i vurderingen.  (nb)">
+				>
+				["at0027"] = <
+					text = <"Comment">
+					description = <"*Fritekst kommentar til graderingen  (nb)">
+				>
+				["at0028"] = <
+					text = <"*Annet (nb)">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"*Diabetisk makulaødem - vurdert OCT (nb)">
+					description = <"*Klassifisering med  OCT (optisk koherenstomografi) for direkte visualisering av ødemet og med beste presisjon.  (nb)">
+					comment = <"* Harde eksudater er et tegn på persisterende eller tidligere gjennomgått makulaødem. DMØ er definert som retinal fortykning, og krever en tredimensjonal undersøkelse for å kunne oppdages. Med stor grad av subjektivitet har dette vært vurdert ved å bruke kontaktglass i spaltelampe og/eller med stereo fundusfotografi etter pupilledilatasjon. I klinikken har nå OCT (optisk koherenstomografi) nesten fullstendig overtatt definisjons- og deteksjonsmessig, da ødemet med denne metoden visualiseres direkte og med større presisjon. (nb)">
+				>
+				["at0037"] = <
+					text = <"*Vurdering av bildekvalitet (nb)">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"*God (nb)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*Moderat (nb)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"*Ikke graderbar (nb)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"ITEM_TREE">
+					description = <"">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0014"] = <[SNOMED-CT::81745001]>
+				["at0015"] = <[SNOMED-CT::18944008]>
+				["at0016"] = <[SNOMED-CT::8966001]>
+				["at0000"] = <[SNOMED-CT::390735007]>
+				["at0019"] = <[SNOMED-CT::700070005]>
+				["at0018"] = <[SNOMED-CT::426880003]>
+			>
+		>
+	>
